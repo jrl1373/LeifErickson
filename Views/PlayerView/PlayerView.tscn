@@ -1,0 +1,33 @@
+[gd_scene load_steps=3 format=3 uid="uid://css3hsjrdihof"]
+
+[ext_resource type="PackedScene" uid="uid://c5qjbywtccp1w" path="res://Ships/Body/body.tscn" id="1_04ktx"]
+[ext_resource type="Script" path="res://Views/PlayerView/PlayerView.gd" id="1_i76le"]
+
+[node name="PlayerView" type="Node2D"]
+script = ExtResource("1_i76le")
+
+[node name="Body" parent="." instance=ExtResource("1_04ktx")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4, 4)
+
+[node name="Cannons" type="HBoxContainer" parent="."]
+offset_left = -240.0
+offset_top = 95.0
+offset_right = -126.0
+offset_bottom = 135.0
+
+[node name="Cannon1" type="Button" parent="Cannons"]
+layout_mode = 2
+toggle_mode = true
+text = "Cannon1"
+
+[node name="Cannon2" type="Button" parent="Cannons"]
+layout_mode = 2
+toggle_mode = true
+text = "Cannon2"
+
+[connection signal="pressed" from="Cannons/Cannon1" to="." method="_on_cannon_1_pressed"]
+[connection signal="pressed" from="Cannons/Cannon1" to="Body" method="_on_cannon_1_pressed"]
+[connection signal="pressed" from="Cannons/Cannon2" to="Body" method="_on_cannon_2_pressed"]
+[connection signal="toggled" from="Cannons/Cannon2" to="Body" method="_on_cannon_2_toggled"]

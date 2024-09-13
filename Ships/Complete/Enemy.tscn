@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b3d1tqrsek8g6"]
+
+[ext_resource type="Texture2D" uid="uid://y2mgm75hf3mx" path="res://Assets/Ship-0001.png" id="1_23wq4"]
+
+[node name="Enemy" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.380392, 0.32549, 0.607843, 1)
+texture = ExtResource("1_23wq4")

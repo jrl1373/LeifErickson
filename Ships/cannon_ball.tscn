@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://cpedwdlx5g7fp"]
+
+[ext_resource type="Script" path="res://Ships/cannon_ball.gd" id="1_t400c"]
+[ext_resource type="Texture2D" uid="uid://cvwp1cu3uauij" path="res://icon.svg" id="2_0ufsd"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_egvb2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_0ufsd")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="CannonBall" type="Node2D"]
+script = ExtResource("1_t400c")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 13
+scale = Vector2(0.088, 0.1)
+sprite_frames = SubResource("SpriteFrames_egvb2")

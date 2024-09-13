@@ -1,0 +1,158 @@
+[gd_scene load_steps=20 format=3 uid="uid://s0gff1e3m8qt"]
+
+[ext_resource type="Texture2D" uid="uid://d3ehdkm6xuml2" path="res://Assets/Foozle_2DT0013_Scallywag_Ships/Ships tiles.png" id="1_j5j7m"]
+[ext_resource type="Script" path="res://Ships/ship.gd" id="1_k1cx1"]
+[ext_resource type="PackedScene" uid="uid://cpedwdlx5g7fp" path="res://Ships/cannon_ball.tscn" id="2_xe387"]
+[ext_resource type="Texture2D" uid="uid://y2mgm75hf3mx" path="res://Assets/Ship-0001.png" id="4_ambch"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5rfe3"]
+atlas = ExtResource("1_j5j7m")
+region = Rect2(0, 0, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lfc7p"]
+atlas = ExtResource("1_j5j7m")
+region = Rect2(0, 64, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2wwe6"]
+atlas = ExtResource("1_j5j7m")
+region = Rect2(0, 128, 32, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lco1r"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5rfe3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lfc7p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2wwe6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ambch")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uqmgl"]
+atlas = ExtResource("1_j5j7m")
+region = Rect2(32, 480, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mokx6"]
+atlas = ExtResource("1_j5j7m")
+region = Rect2(32, 512, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fb534"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uqmgl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mokx6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_iaibv"]
+atlas = ExtResource("1_j5j7m")
+region = Rect2(0, 352, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ukd73"]
+atlas = ExtResource("1_j5j7m")
+region = Rect2(32, 416, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_edc56"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"Broken",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iaibv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ukd73")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qscfy"]
+atlas = ExtResource("1_j5j7m")
+region = Rect2(544, 512, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a4kcr"]
+atlas = ExtResource("1_j5j7m")
+region = Rect2(352, 544, 32, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d1cfl"]
+atlas = ExtResource("1_j5j7m")
+region = Rect2(352, 608, 32, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_725gc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qscfy")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a4kcr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d1cfl")
+}],
+"loop": true,
+"name": &"moving",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v5by5"]
+radius = 32.0
+height = 194.0
+
+[node name="Ship" type="CharacterBody2D"]
+script = ExtResource("1_k1cx1")
+cannon = ExtResource("2_xe387")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("4_ambch")
+
+[node name="Hull" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_lco1r")
+
+[node name="Post" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_fb534")
+
+[node name="Sail" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_edc56")
+
+[node name="Waves" type="Node2D" parent="."]
+
+[node name="WavesLeft" type="AnimatedSprite2D" parent="Waves"]
+position = Vector2(-16, 0)
+sprite_frames = SubResource("SpriteFrames_725gc")
+animation = &"idle"
+flip_h = true
+
+[node name="WavesRight" type="AnimatedSprite2D" parent="Waves"]
+position = Vector2(16, 0)
+sprite_frames = SubResource("SpriteFrames_725gc")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 39)
+shape = SubResource("CapsuleShape2D_v5by5")
