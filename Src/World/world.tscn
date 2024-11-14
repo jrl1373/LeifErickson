@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://cndfn5dle7ba2"]
 
-[ext_resource type="Script" path="res://World/world.gd" id="1_hu7wv"]
-[ext_resource type="PackedScene" uid="uid://cpedwdlx5g7fp" path="res://Ships/cannon_ball.tscn" id="2_ae3n6"]
-[ext_resource type="PackedScene" uid="uid://s0gff1e3m8qt" path="res://Ships/ship.tscn" id="3_qo36d"]
+[ext_resource type="Script" path="res://Src/World/world.gd" id="1_hu7wv"]
+[ext_resource type="PackedScene" uid="uid://cpedwdlx5g7fp" path="res://Src/Ships/cannon_ball.tscn" id="2_ae3n6"]
+[ext_resource type="PackedScene" uid="uid://s0gff1e3m8qt" path="res://Src/Ships/ship.tscn" id="3_qo36d"]
 [ext_resource type="Texture2D" uid="uid://cvwp1cu3uauij" path="res://icon.svg" id="4_y08wq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1jg55"]

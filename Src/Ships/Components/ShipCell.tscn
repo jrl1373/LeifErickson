@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpxvre0gl2y8c"]
+
+[ext_resource type="Script" path="res://Src/Ships/Components/ShipCell.gd" id="1_b71jp"]
+
+[node name="ShipCell" type="Node2D"]
+script = ExtResource("1_b71jp")

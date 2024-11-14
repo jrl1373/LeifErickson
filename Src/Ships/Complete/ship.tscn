@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bbd3p44wjtxjf"]
 
-[ext_resource type="Script" path="res://Ships/Complete/ship.gd" id="1_7yjvy"]
-[ext_resource type="PackedScene" uid="uid://ctcverjg66bh8" path="res://Ships/Cannons/cannon_ball.tscn" id="2_g02hi"]
+[ext_resource type="Script" path="res://Src/Ships/Complete/ship.gd" id="1_7yjvy"]
+[ext_resource type="PackedScene" uid="uid://ctcverjg66bh8" path="res://Src/Ships/Cannons/cannon_ball.tscn" id="2_g02hi"]
 [ext_resource type="Texture2D" uid="uid://y2mgm75hf3mx" path="res://Assets/Ship-0001.png" id="3_sooyp"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v5by5"]

@@ -1,0 +1,88 @@
+[gd_scene load_steps=12 format=3 uid="uid://cee3ybclsu5lm"]
+
+[ext_resource type="Script" path="res://Crew/Crew.gd" id="1_yxv78"]
+[ext_resource type="Texture2D" uid="uid://cpc8d72ky77as" path="res://Assets/Crew/walking_pink.png" id="2_rv8a4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_63ocw"]
+atlas = ExtResource("2_rv8a4")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mkkj0"]
+atlas = ExtResource("2_rv8a4")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bjueh"]
+atlas = ExtResource("2_rv8a4")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xcwwk"]
+atlas = ExtResource("2_rv8a4")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jh477"]
+atlas = ExtResource("2_rv8a4")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e2v3s"]
+atlas = ExtResource("2_rv8a4")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r2hp6"]
+atlas = ExtResource("2_rv8a4")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bdykv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_63ocw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mkkj0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bjueh")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xcwwk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jh477")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e2v3s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r2hp6")
+}],
+"loop": true,
+"name": &"walking",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_b3lk2"]
+radius = 4.99984
+height = 14.0
+
+[node name="Crew" type="Node2D"]
+script = ExtResource("1_yxv78")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_bdykv")
+animation = &"walking"
+frame_progress = 0.772061
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+rotation = 1.57877
+shape = SubResource("CapsuleShape2D_b3lk2")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

@@ -1,19 +1,19 @@
 [gd_scene load_steps=16 format=3 uid="uid://c5qjbywtccp1w"]
 
-[ext_resource type="Script" path="res://Ships/Body/body.gd" id="1_56uum"]
-[ext_resource type="Texture2D" uid="uid://y2mgm75hf3mx" path="res://Assets/Ship-0001.png" id="2_24cg8"]
-[ext_resource type="Texture2D" uid="uid://daqvowv8eyr1c" path="res://Assets/ship-0001-2.png" id="3_8o70q"]
-[ext_resource type="Texture2D" uid="uid://dsrdlq65i4q0u" path="res://Assets/damaged_ship-001.png" id="4_qcau1"]
-[ext_resource type="Texture2D" uid="uid://dhkaoned3mli6" path="res://Assets/sails-0001.png" id="5_e7pt7"]
-[ext_resource type="PackedScene" uid="uid://d1rrxt78r1ukw" path="res://Ships/Cannons/Cannon.tscn" id="7_0ukv1"]
-[ext_resource type="Texture2D" uid="uid://d3ehdkm6xuml2" path="res://Assets/Foozle_2DT0013_Scallywag_Ships/Ships tiles.png" id="7_nm5f1"]
-[ext_resource type="PackedScene" uid="uid://cee3ybclsu5lm" path="res://Crew/Crew.tscn" id="8_q1iev"]
+[ext_resource type="Script" path="res://Src/Ships/Body/body.gd" id="1_wbcia"]
+[ext_resource type="Texture2D" uid="uid://daqvowv8eyr1c" path="res://Assets/ship-0001-2.png" id="2_kk53x"]
+[ext_resource type="Texture2D" uid="uid://dsrdlq65i4q0u" path="res://Assets/damaged_ship-001.png" id="3_iacqa"]
+[ext_resource type="Texture2D" uid="uid://dhkaoned3mli6" path="res://Assets/sails-0001.png" id="4_tualj"]
+[ext_resource type="Texture2D" uid="uid://y2mgm75hf3mx" path="res://Assets/Ship-0001.png" id="5_t67n3"]
+[ext_resource type="Texture2D" uid="uid://d3ehdkm6xuml2" path="res://Assets/Foozle_2DT0013_Scallywag_Ships/Ships tiles.png" id="6_lw6gb"]
+[ext_resource type="PackedScene" uid="uid://d1rrxt78r1ukw" path="res://Src/Ships/Cannons/Cannon.tscn" id="7_34hgy"]
+[ext_resource type="PackedScene" uid="uid://cee3ybclsu5lm" path="res://Src/Crew/Crew.tscn" id="8_vbq0q"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_rcmll"]
 tile_data = PackedInt32Array(458752, 65536, 8, 524288, 65536, 9, 589824, 65536, 10, 655360, 65536, 11, 720896, 65536, 12, 786432, 65536, 13, 327681, 131072, 6, 393217, 131072, 7, 458753, 131072, 8, 524289, 131072, 9, 589825, 131072, 10, 655361, 131072, 11, 720897, 131072, 12, 786433, 131072, 13, 851969, 131072, 14, 917505, 131072, 15, 983041, 131072, 16, 1048577, 131072, 17, 2, 196608, 1, 65538, 196608, 2, 131074, 196608, 3, 196610, 196608, 4, 262146, 196608, 5, 327682, 196608, 6, 393218, 196608, 7, 458754, 196608, 8, 524290, 196608, 9, 589826, 196608, 10, 655362, 196608, 11, 720898, 196608, 12, 786434, 196608, 13, 851970, 196608, 14, 917506, 196608, 15, 983042, 196608, 16, 1048578, 196608, 17, 3, 262144, 1, 65539, 262144, 2, 131075, 262144, 3, 196611, 262144, 4, 262147, 262144, 5, 327683, 262144, 6, 393219, 262144, 7, 458755, 262144, 8, 524291, 262144, 9, 589827, 262144, 10, 655363, 262144, 11, 720899, 262144, 12, 786435, 262144, 13, 851971, 262144, 14, 917507, 262144, 15, 983043, 262144, 16, 1048579, 262144, 17, 327684, 327680, 6, 393220, 327680, 7, 458756, 327680, 8, 524292, 327680, 9, 589828, 327680, 10, 655364, 327680, 11, 720900, 327680, 12, 786436, 327680, 13, 851972, 327680, 14, 917508, 327680, 15, 983044, 327680, 16, 1048580, 327680, 17, 458757, 393216, 8, 524293, 393216, 9, 589829, 393216, 10, 655365, 393216, 11, 720901, 393216, 12, 786437, 393216, 13)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_efqqr"]
-texture = ExtResource("3_8o70q")
+texture = ExtResource("2_kk53x")
 3:1/0 = 0
 4:1/0 = 0
 3:2/0 = 0
@@ -86,7 +86,7 @@ texture = ExtResource("3_8o70q")
 5:17/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uhmd6"]
-texture = ExtResource("4_qcau1")
+texture = ExtResource("3_iacqa")
 3:4/0 = 0
 4:4/0 = 0
 3:5/0 = 0
@@ -153,7 +153,7 @@ texture = ExtResource("4_qcau1")
 5:17/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ydpjs"]
-texture = ExtResource("5_e7pt7")
+texture = ExtResource("4_tualj")
 2:1/0 = 0
 3:1/0 = 0
 4:1/0 = 0
@@ -216,7 +216,7 @@ texture = ExtResource("5_e7pt7")
 6:15/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_iv63f"]
-texture = ExtResource("2_24cg8")
+texture = ExtResource("5_t67n3")
 3:3/0 = 0
 4:3/0 = 0
 3:4/0 = 0
@@ -285,7 +285,7 @@ texture = ExtResource("2_24cg8")
 5:17/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8q1wd"]
-texture = ExtResource("7_nm5f1")
+texture = ExtResource("6_lw6gb")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -1640,10 +1640,9 @@ sources/5 = SubResource("TileSetAtlasSource_8q1wd")
 pattern_0 = SubResource("TileMapPattern_rcmll")
 
 [node name="Body" type="Node2D"]
-script = ExtResource("1_56uum")
+script = ExtResource("1_wbcia")
 
 [node name="TileMap" type="TileMap" parent="."]
-position = Vector2(-64, -176)
 tile_set = SubResource("TileSet_hdd3t")
 format = 2
 layer_0/tile_data = PackedInt32Array(524289, 65536, 8, 589825, 65536, 9, 655361, 65536, 10, 720897, 65536, 11, 786433, 65536, 12, 851969, 65536, 13, 393218, 131072, 6, 458754, 131072, 7, 524290, 131072, 8, 589826, 131072, 9, 655362, 131072, 10, 720898, 131072, 11, 786434, 131072, 12, 851970, 131072, 13, 917506, 131072, 14, 983042, 131072, 15, 1048578, 131072, 16, 1114114, 131072, 17, 196611, 196608, 3, 262147, 196608, 4, 327683, 196608, 5, 393219, 196608, 6, 458755, 196608, 7, 524291, 196608, 8, 589827, 196608, 9, 655363, 196608, 10, 720899, 196608, 11, 786435, 196608, 12, 851971, 196608, 13, 917507, 196608, 14, 983043, 196608, 15, 1048579, 196608, 16, 1114115, 196608, 17, 196612, 262144, 3, 262148, 262144, 4, 327684, 262144, 5, 393220, 262144, 6, 458756, 262144, 7, 524292, 262144, 8, 589828, 262144, 9, 655364, 262144, 10, 720900, 262144, 11, 786436, 262144, 12, 851972, 262144, 13, 917508, 262144, 14, 983044, 262144, 15, 1048580, 262144, 16, 1114116, 262144, 17, 393221, 327680, 6, 458757, 327680, 7, 524293, 327680, 8, 589829, 327680, 9, 655365, 327680, 10, 720901, 327680, 11, 786437, 327680, 12, 851973, 327680, 13, 917509, 327680, 14, 983045, 327680, 15, 1048581, 327680, 16, 1114117, 327680, 17, 524294, 393216, 8, 589830, 393216, 9, 655366, 393216, 10, 720902, 393216, 11, 786438, 393216, 12, 851974, 393216, 13, 65539, 196608, 1, 131075, 196608, 2, 65540, 262144, 1, 131076, 262144, 2)
@@ -1656,18 +1655,25 @@ layer_1/z_index = 12
 layer_1/tile_data = PackedInt32Array(655360, 2, 10, 720896, 2, 11, 327681, 65538, 5, 393217, 65538, 6, 589825, 65538, 9, 655361, 65538, 10, 720897, 65538, 11, 983041, 65538, 15, 65538, 131074, 1, 131074, 131074, 2, 196610, 131074, 3, 262146, 131074, 4, 327682, 131074, 5, 393218, 131074, 6, 589826, 131074, 9, 655362, 131074, 10, 720898, 131074, 11, 917506, 131074, 14, 983042, 131074, 15, 65539, 196610, 1, 131075, 196610, 2, 196611, 196610, 3, 262147, 196610, 4, 327683, 196610, 5, 393219, 196610, 6, 589827, 196610, 9, 655363, 196610, 10, 720899, 196610, 11, 917507, 196610, 14, 983043, 196610, 15, 65540, 262146, 1, 131076, 262146, 2, 196612, 262146, 3, 262148, 262146, 4, 327684, 262146, 5, 393220, 262146, 6, 589828, 262146, 9, 655364, 262146, 10, 720900, 262146, 11, 917508, 262146, 14, 983044, 262146, 15, 65541, 327682, 1, 131077, 327682, 2, 196613, 327682, 3, 262149, 327682, 4, 327685, 327682, 5, 393221, 327682, 6, 589829, 327682, 9, 655365, 327682, 10, 720901, 327682, 11, 917509, 327682, 14, 983045, 327682, 15, 327686, 393218, 5, 393222, 393218, 6, 589830, 393218, 9, 655366, 393218, 10, 720902, 393218, 11, 983046, 393218, 15, 655367, 458754, 10, 720903, 458754, 11)
 
 [node name="Cannons" type="Node2D" parent="."]
+position = Vector2(64, 176)
 
-[node name="Cannon1" parent="Cannons" instance=ExtResource("7_0ukv1")]
+[node name="Cannon1" parent="Cannons" instance=ExtResource("7_34hgy")]
 position = Vector2(-32, 0)
 rotation = 3.14159
 
-[node name="Cannon2" parent="Cannons" instance=ExtResource("7_0ukv1")]
+[node name="Cannon2" parent="Cannons" instance=ExtResource("7_34hgy")]
 position = Vector2(32, 0)
 
 [node name="CrewManager" type="Node2D" parent="."]
+position = Vector2(64, 176)
 
 [node name="Crew" type="Node2D" parent="."]
 
-[node name="Pink" parent="Crew" instance=ExtResource("8_q1iev")]
+[node name="Pink" parent="Crew" instance=ExtResource("8_vbq0q")]
+position = Vector2(64, 176)
+
+[node name="Pink2" parent="Crew" instance=ExtResource("8_vbq0q")]
+position = Vector2(64, 144)
 
 [connection signal="selected" from="Crew/Pink" to="." method="_on_pink_selected"]
+[connection signal="selected" from="Crew/Pink2" to="." method="_on_pink_selected"]

@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://ytmjte7c61ni"]
 
-[ext_resource type="Script" path="res://Views/MergedView/MergedView.gd" id="1_gcg2v"]
-[ext_resource type="PackedScene" uid="uid://cndfn5dle7ba2" path="res://World/world.tscn" id="1_gn8yy"]
+[ext_resource type="Script" path="res://Src/Views/MergedView/MergedView.gd" id="1_gcg2v"]
+[ext_resource type="PackedScene" uid="uid://cndfn5dle7ba2" path="res://Src/World/world.tscn" id="1_gn8yy"]
 [ext_resource type="Texture2D" uid="uid://dle68y5qodmj6" path="res://Assets/Black_border.png" id="2_hiuhb"]
-[ext_resource type="PackedScene" uid="uid://r21sjw5aihmd" path="res://Views/TacticalView/TacticalView.tscn" id="2_x4a01"]
+[ext_resource type="PackedScene" uid="uid://r21sjw5aihmd" path="res://Src/Views/TacticalView/TacticalView.tscn" id="2_x4a01"]
 
 [node name="MergedView" type="Node2D"]
 script = ExtResource("1_gcg2v")

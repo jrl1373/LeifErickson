@@ -1,12 +1,14 @@
 [gd_scene load_steps=3 format=3 uid="uid://css3hsjrdihof"]
 
-[ext_resource type="PackedScene" uid="uid://c5qjbywtccp1w" path="res://Ships/Body/body.tscn" id="1_04ktx"]
-[ext_resource type="Script" path="res://Views/PlayerView/PlayerView.gd" id="1_i76le"]
+[ext_resource type="Script" path="res://Src/Views/PlayerView/PlayerView.gd" id="1_g1hw2"]
+[ext_resource type="PackedScene" uid="uid://c5qjbywtccp1w" path="res://Src/Ships/Body/body.tscn" id="2_mto56"]
 
 [node name="PlayerView" type="Node2D"]
-script = ExtResource("1_i76le")
+position = Vector2(240, -136)
+script = ExtResource("1_g1hw2")
 
-[node name="Body" parent="." instance=ExtResource("1_04ktx")]
+[node name="Body" parent="." instance=ExtResource("2_mto56")]
+position = Vector2(-64, -176)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(4, 4)

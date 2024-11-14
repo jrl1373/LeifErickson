@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://ch5qondm7mjna"]
+
+[ext_resource type="Script" path="res://Src/Views/1v1View/1v1View.gd" id="1_5nkie"]
+[ext_resource type="PackedScene" uid="uid://r21sjw5aihmd" path="res://Src/Views/TacticalView/TacticalView.tscn" id="2_cy1ya"]
+[ext_resource type="PackedScene" uid="uid://css3hsjrdihof" path="res://Src/Views/PlayerView/PlayerView.tscn" id="3_ui1ox"]
+
+[node name="1v1View" type="Node2D"]
+script = ExtResource("1_5nkie")
+
+[node name="Camera" type="Camera2D" parent="."]
+position = Vector2(960, 539)
+
+[node name="TacticalView" parent="." instance=ExtResource("2_cy1ya")]
+position = Vector2(1580, 540)
+scale = Vector2(2.5, 2.5)
+
+[node name="PlayerView" parent="." instance=ExtResource("3_ui1ox")]
+position = Vector2(400, 540)
+scale = Vector2(3, 3)

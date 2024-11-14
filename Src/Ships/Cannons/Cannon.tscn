@@ -1,71 +1,75 @@
-[gd_scene load_steps=22 format=3 uid="uid://d1rrxt78r1ukw"]
+[gd_scene load_steps=23 format=3 uid="uid://d1rrxt78r1ukw"]
 
-[ext_resource type="Script" path="res://Ships/Cannons/Cannon.gd" id="1_2vion"]
-[ext_resource type="Texture2D" uid="uid://d3ehdkm6xuml2" path="res://Assets/Foozle_2DT0013_Scallywag_Ships/Ships tiles.png" id="1_l11vk"]
-[ext_resource type="Texture2D" uid="uid://fpis7lgk8k86" path="res://Assets/cannonfire2.2.png" id="2_1ad7y"]
+[ext_resource type="Script" path="res://Src/Ships/Cannons/Cannon.gd" id="1_4wl7g"]
+[ext_resource type="Texture2D" uid="uid://fpis7lgk8k86" path="res://Assets/cannonfire2.2.png" id="2_yfusy"]
+[ext_resource type="Texture2D" uid="uid://d3ehdkm6xuml2" path="res://Assets/Foozle_2DT0013_Scallywag_Ships/Ships tiles.png" id="3_n82rw"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4ii47"]
-atlas = ExtResource("2_1ad7y")
+atlas = ExtResource("2_yfusy")
 region = Rect2(0, 0, 32, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vqfmf"]
-atlas = ExtResource("2_1ad7y")
+atlas = ExtResource("2_yfusy")
 region = Rect2(32, 0, 32, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m3w7n"]
-atlas = ExtResource("2_1ad7y")
+atlas = ExtResource("2_yfusy")
 region = Rect2(64, 0, 32, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_brp45"]
-atlas = ExtResource("2_1ad7y")
+atlas = ExtResource("2_yfusy")
 region = Rect2(96, 0, 32, 16)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_hrrv1"]
+atlas = ExtResource("2_yfusy")
+region = Rect2(0, 0, 32, 16)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_o5vae"]
-atlas = ExtResource("1_l11vk")
+atlas = ExtResource("3_n82rw")
 region = Rect2(448, 592, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uqqdm"]
-atlas = ExtResource("1_l11vk")
+atlas = ExtResource("3_n82rw")
 region = Rect2(464, 592, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7qu7i"]
-atlas = ExtResource("1_l11vk")
+atlas = ExtResource("3_n82rw")
 region = Rect2(480, 592, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sm2io"]
-atlas = ExtResource("1_l11vk")
+atlas = ExtResource("3_n82rw")
 region = Rect2(496, 592, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8v5qh"]
-atlas = ExtResource("1_l11vk")
+atlas = ExtResource("3_n82rw")
 region = Rect2(512, 592, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cfeq0"]
-atlas = ExtResource("1_l11vk")
+atlas = ExtResource("3_n82rw")
 region = Rect2(528, 592, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_65x8l"]
-atlas = ExtResource("1_l11vk")
+atlas = ExtResource("3_n82rw")
 region = Rect2(448, 576, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vdhnj"]
-atlas = ExtResource("1_l11vk")
+atlas = ExtResource("3_n82rw")
 region = Rect2(464, 576, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f3e8r"]
-atlas = ExtResource("1_l11vk")
+atlas = ExtResource("3_n82rw")
 region = Rect2(480, 576, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mr8rv"]
-atlas = ExtResource("1_l11vk")
+atlas = ExtResource("3_n82rw")
 region = Rect2(496, 576, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8d35x"]
-atlas = ExtResource("1_l11vk")
+atlas = ExtResource("3_n82rw")
 region = Rect2(512, 576, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7cdmv"]
-atlas = ExtResource("1_l11vk")
+atlas = ExtResource("3_n82rw")
 region = Rect2(528, 576, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yr0m1"]
@@ -82,8 +86,11 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_brp45")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hrrv1")
 }],
-"loop": true,
+"loop": false,
 "name": &"RussCannon",
 "speed": 5.0
 }, {
@@ -148,7 +155,7 @@ animations = [{
 size = Vector2(12, 10)
 
 [node name="Cannon" type="Node2D"]
-script = ExtResource("1_2vion")
+script = ExtResource("1_4wl7g")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
 position = Vector2(7, 0)

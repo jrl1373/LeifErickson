@@ -16,6 +16,7 @@ func shoot():
 func _on_area_2d_input_event(viewport, event, shape_idx):
 	if event.is_action_pressed("click"):
 		print("Selected!")
+		shoot()
 		selected.emit(self)
 		
 	pass # Replace with function body.

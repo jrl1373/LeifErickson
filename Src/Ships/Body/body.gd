@@ -3,18 +3,19 @@ var held = false
 var start_pos = Vector2(0,0)
 var shot = Line2D.new()
 var body = []
-var cellScene = preload("res://Ships/Components/ShipCell.tscn")
+var cellScene = preload("res://src/Ships/Components/ShipCell.tscn")
 var cannon_loc = []
 var selected_cannon = null
 var selected_crew = null
-var manager = preload("res://Ships/ShipManager.gd")
+var manager = preload("res://src/Ships/ShipManager.gd")
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	generate_body_map()
 	connect_cannons()
-
+	for crew in $Crew.get_children():
+		crew.update_cell_pos($TileMap.local_to_map(crew.position))
 	pass # Replace with function body.
 
 
@@ -24,7 +25,7 @@ func _process(delta):
 		held = true
 		if selected_cannon != null:
 			create_shot()
-		var cell =$TileMap.local_to_map(get_local_mouse_position())
+		var cell = $TileMap.local_to_map(get_local_mouse_position())
 		print(cell)
 		print(selected_crew)
 		if selected_crew != null:
@@ -53,28 +54,25 @@ func create_shot():
 func shoot_shot():
 	
 	var cells = []
-	var p1 = shot.get_point_position(0) - $TileMap.position
-	var p2 = shot.get_point_position(1) - $TileMap.position
-#calculate distance between points
-	var hits = floor(p1.distance_to(p2))
-	var point = p1
-	
-	for i in range(hits):
-		point = p1.lerp(p2,i/hits)
-		var cell = $TileMap.local_to_map(point)
-		if !cell in cells:
-			print(cell)
-			cells.append(cell)
-	for cell in cells:
-		var atlas = $TileMap.get_cell_atlas_coords(0,cell)
-#		print(atlas)
-		$TileMap.set_cell(0,cell,1,atlas)
-		update_body(cell,"damaged")
-
-
+	if is_instance_valid(shot):
+		var p1 = shot.get_point_position(0) - $TileMap.position
+		var p2 = shot.get_point_position(1) - $TileMap.position
+	#calculate distance between points
+		var hits = floor(p1.distance_to(p2))
+		var point = p1
 		
-	
-	shot.queue_free()
+		for i in range(hits):
+			point = p1.lerp(p2,i/hits)
+			var cell = $TileMap.local_to_map(point)
+			if !cell in cells:
+				print(cell)
+				cells.append(cell)
+		for cell in cells:
+			var atlas = $TileMap.get_cell_atlas_coords(0,cell)
+	#		print(atlas)
+			$TileMap.set_cell(0,cell,1,atlas)
+			update_body(cell,"damaged")
+		shot.queue_free()
 	pass
 
 #updates the ships body
@@ -132,7 +130,8 @@ func _on_cannon_2_pressed():
 	pass # Replace with function body.
 
 
-func _on_pink_selected():
-	print("SELECTED")
-	selected_crew = $Crew/Pink
+
+
+func _on_pink_selected(name):
+	selected_crew = name
 	pass # Replace with function body.
