@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Leif Erickson"
-run/main_scene="res://Src/Views/1v1View/1v1View.tscn"
+run/main_scene="res://Src/Encounters/encounterint.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 

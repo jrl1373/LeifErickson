@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bu5pqdhgo6rer"]
+
+[ext_resource type="Script" path="res://Src/Encounters/encounterint.gd" id="1_ey8eu"]
+[ext_resource type="PackedScene" uid="uid://8j0dhdgrn82h" path="res://Src/Encounters/dialogue.tscn" id="2_cdmnx"]
+
+[node name="Encounterint" type="Node2D"]
+script = ExtResource("1_ey8eu")
+
+[node name="Dialogue" parent="." instance=ExtResource("2_cdmnx")]
