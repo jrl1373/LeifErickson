@@ -1,0 +1,60 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1731543134
+hi.txt::TextFile::-1::1730576691::0::1::::<><>::
+icon.svg::CompressedTexture2D::6293180717148952105::1718206302::1718206312::1::::<><>::
+::res://Assets/::1730576796
+Black_border.png::CompressedTexture2D::7941539307738863993::1719003788::1719003789::1::::<><>::
+cannonfire2.2.png::CompressedTexture2D::382429462760817233::1722965887::1722965894::1::::<><>::
+damaged_ship-001.png::CompressedTexture2D::8457958342731607310::1720562168::1720562181::1::::<><>::
+sails-0001.png::CompressedTexture2D::7671253424357774043::1720566696::1720566706::1::::<><>::
+ship-0001-2.png::CompressedTexture2D::7193593342567297946::1720567024::1720567024::1::::<><>::
+Ship-0001.png::CompressedTexture2D::1741010446435607543::1719008726::1719008730::1::::<><>::
+Ships tiles-2.png.png::CompressedTexture2D::534305735414244029::1718893247::1718893352::1::::<><>::
+::res://Assets/Crew/::1725991218
+walking_pink.png::CompressedTexture2D::5831813518552460306::1725991213::1725991218::1::::<><>::
+::res://Assets/Foozle_2DT0013_Scallywag_Ships/::1719006797
+Boat Fx Animations.png::CompressedTexture2D::3501707714344551883::1718206760::1718206819::1::::<><>::
+Readme.txt::TextFile::-1::1718207712::0::1::::<><>::
+Ships Mockup.png::CompressedTexture2D::2755657713013916587::1718206345::1718206348::1::::<><>::
+Ships tiles.png::CompressedTexture2D::9133238105502717617::1718206345::1718206348::1::::<><>::
+::res://Saves/::1730570747
+::res://Saves/ShipPresets/::1730570747
+::res://Src/::1730570623
+::res://Src/Crew/::1731542727
+Crew.gd::GDScript::-1::1727215457::0::1::::<>Node2D<>::
+Crew.tscn::PackedScene::5063597243943373082::1731542727::0::1::::<><>::res://Src/Crew/Crew.gd<>uid://cpc8d72ky77as::::res://Assets/Crew/walking_pink.png
+::res://Src/Ships/::1725994629
+cannon_ball.tscn::PackedScene::5834153147065410921::1720639674::0::1::::<><>::res://Ships/cannon_ball.gd<>uid://cvwp1cu3uauij::::res://icon.svg
+ship.tscn::PackedScene::1315382163263535575::1720639674::0::1::::<><>::uid://d3ehdkm6xuml2::::res://Assets/Foozle_2DT0013_Scallywag_Ships/Ships tiles.png<>res://Ships/ship.gd<>uid://cpedwdlx5g7fp::::res://Ships/cannon_ball.tscn<>uid://y2mgm75hf3mx::::res://Assets/Ship-0001.png
+ShipManager.gd::GDScript::-1::1725994629::0::1::::<>Node2D<>::
+::res://Src/Ships/Body/::1730570662
+body.gd::GDScript::-1::1730570662::0::1::::<>Node2D<>::
+body.tscn::PackedScene::6912086254733076310::1730570624::0::1::::<><>::res://Src/Ships/Body/body.gd<>uid://daqvowv8eyr1c::::res://Assets/ship-0001-2.png<>uid://dsrdlq65i4q0u::::res://Assets/damaged_ship-001.png<>uid://dhkaoned3mli6::::res://Assets/sails-0001.png<>uid://y2mgm75hf3mx::::res://Assets/Ship-0001.png<>uid://d3ehdkm6xuml2::::res://Assets/Foozle_2DT0013_Scallywag_Ships/Ships tiles.png<>uid://d1rrxt78r1ukw::::res://Src/Ships/Cannons/Cannon.tscn<>uid://cee3ybclsu5lm::::res://Src/Crew/Crew.tscn
+::res://Src/Ships/Cannons/::1731542726
+Cannon.gd::GDScript::-1::1726496456::0::1::::<>Node2D<>::
+Cannon.tscn::PackedScene::9020340718524529978::1731542726::0::1::::<><>::res://Src/Ships/Cannons/Cannon.gd<>uid://fpis7lgk8k86::::res://Assets/cannonfire2.2.png<>uid://d3ehdkm6xuml2::::res://Assets/Foozle_2DT0013_Scallywag_Ships/Ships tiles.png
+cannon_ball.gd::GDScript::-1::1718764454::0::1::::<>Node2D<>::
+cannon_ball.tscn::PackedScene::6111841259156103291::1730570623::0::1::::<><>::res://Src/Ships/Cannons/cannon_ball.gd<>uid://cvwp1cu3uauij::::res://icon.svg
+::res://Src/Ships/Complete/::1730570624
+Enemy.tscn::PackedScene::4359514878175199999::1720561584::0::1::::<><>::uid://y2mgm75hf3mx::::res://Assets/Ship-0001.png
+ship.gd::GDScript::-1::1719022089::0::1::::<>CharacterBody2D<>::
+ship.tscn::PackedScene::2464531092288209467::1730570624::0::1::::<><>::res://Src/Ships/Complete/ship.gd<>uid://ctcverjg66bh8::::res://Src/Ships/Cannons/cannon_ball.tscn<>uid://y2mgm75hf3mx::::res://Assets/Ship-0001.png
+::res://Src/Ships/Components/::1731542726
+ShipCell.gd::GDScript::-1::1720561954::0::1::::<>Node2D<>::
+ShipCell.tscn::PackedScene::8260881058339556044::1731542726::0::1::::<><>::res://Src/Ships/Components/ShipCell.gd
+::res://Src/Views/::1720547454
+::res://Src/Views/1v1View/::1730570624
+1v1View.gd::GDScript::-1::1720548608::0::1::::<>Node2D<>::
+1v1View.tscn::PackedScene::5327091766499589502::1730570624::0::1::::<><>::res://Src/Views/1v1View/1v1View.gd<>uid://r21sjw5aihmd::::res://Src/Views/TacticalView/TacticalView.tscn<>uid://css3hsjrdihof::::res://Src/Views/PlayerView/PlayerView.tscn
+::res://Src/Views/MergedView/::1730570624
+MergedView.gd::GDScript::-1::1720545069::0::1::::<>Node2D<>::
+MergedView.tscn::PackedScene::1724501106278980162::1730570624::0::1::::<><>::res://Src/Views/MergedView/MergedView.gd<>uid://cndfn5dle7ba2::::res://Src/World/world.tscn<>uid://dle68y5qodmj6::::res://Assets/Black_border.png<>uid://r21sjw5aihmd::::res://Src/Views/TacticalView/TacticalView.tscn
+::res://Src/Views/PlayerView/::1731542727
+PlayerView.gd::GDScript::-1::1725993716::0::1::::<>Node2D<>::
+PlayerView.tscn::PackedScene::6075112888898932813::1731542727::0::1::::<><>::res://Src/Views/PlayerView/PlayerView.gd<>uid://c5qjbywtccp1w::::res://Src/Ships/Body/body.tscn
+::res://Src/Views/TacticalView/::1731542727
+TacticalView.gd::GDScript::-1::1720563483::0::1::::<>Node2D<>::
+TacticalView.tscn::PackedScene::1250559835367614775::1731542727::0::1::::<><>::res://Src/Views/TacticalView/TacticalView.gd<>uid://c5qjbywtccp1w::::res://Src/Ships/Body/body.tscn
+::res://Src/World/::1730570624
+world.gd::GDScript::-1::1718811674::0::1::::<>Node2D<>::
+world.tscn::PackedScene::5691817849068709887::1730570624::0::1::::<><>::res://Src/World/world.gd<>uid://cpedwdlx5g7fp::::res://Src/Ships/cannon_ball.tscn<>uid://s0gff1e3m8qt::::res://Src/Ships/ship.tscn<>uid://cvwp1cu3uauij::::res://icon.svg
