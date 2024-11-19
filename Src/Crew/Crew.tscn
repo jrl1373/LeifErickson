@@ -1,7 +1,15 @@
-[gd_scene load_steps=12 format=3 uid="uid://cee3ybclsu5lm"]
+[gd_scene load_steps=14 format=3 uid="uid://cee3ybclsu5lm"]
 
 [ext_resource type="Script" path="res://Src/Crew/Crew.gd" id="1_trr3g"]
 [ext_resource type="Texture2D" uid="uid://cpc8d72ky77as" path="res://Assets/Crew/walking_pink.png" id="2_hasyf"]
+[ext_resource type="Shader" path="res://Src/Shaders/BasicSelected.gdshader" id="2_y4bky"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ijqme"]
+resource_local_to_scene = true
+shader = ExtResource("2_y4bky")
+shader_parameter/line_color = Color(1, 1, 1, 1)
+shader_parameter/line_thickness = 0.5
+shader_parameter/onoff = 0.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_63ocw"]
 atlas = ExtResource("2_hasyf")
@@ -73,6 +81,7 @@ height = 14.0
 script = ExtResource("1_trr3g")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_ijqme")
 position = Vector2(8, 6)
 sprite_frames = SubResource("SpriteFrames_bdykv")
 animation = &"walking"

@@ -5,6 +5,7 @@ var grid_size = Vector2i(64,64)
 var curr_path = PackedVector2Array()
 var path_t = 0
 var speed = 2
+
 @export var cell_size = Vector2i(16, 16)
 
 
@@ -52,7 +53,13 @@ func go_to_cell(cell):
 	var path = PackedVector2Array(astar_grid.get_point_path(cell_pos, cell))
 	print(path)
 	curr_path = path
+	
+	
+func select():
+	$AnimatedSprite2D.material.set_shader_parameter("onoff",1)
 
+func deselect():
+		$AnimatedSprite2D.material.set_shader_parameter("onoff",0)
 
 func _on_area_2d_input_event(viewport, event, shape_idx):
 	if event.is_action_pressed("click"):

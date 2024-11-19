@@ -103,6 +103,8 @@ func connect_cannons():
 
 #selects cannon
 func _cannon_selected(cannon):
+	get_tree().call_group("Selectable", "deselect")
+	cannon.select()
 	selected_cannon = cannon
 	pass
 
@@ -131,7 +133,8 @@ func _on_cannon_2_pressed():
 
 
 
-
 func _on_pink_selected(name):
+	get_tree().call_group("Selectable", "deselect")
+	name.select()
 	selected_crew = name
 	pass # Replace with function body.
