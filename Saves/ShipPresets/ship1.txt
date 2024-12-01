@@ -1,0 +1,8 @@
+{
+	"name" : "ship1",
+	"body" : "",
+	"crew": "",
+	"crew_positions": "",
+	"cannons": "",
+	"cannon_positions": "",
+}

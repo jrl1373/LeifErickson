@@ -1,3 +1,4 @@
+#main ship body node, connects ship, crews, and cannon
 extends Node2D
 var held = false
 var start_pos = Vector2(0,0)
@@ -7,7 +8,7 @@ var cellScene = preload("res://src/Ships/Components/ShipCell.tscn")
 var cannon_loc = []
 var selected_cannon = null
 var selected_crew = null
-var manager = preload("res://src/Ships/ShipManager.gd")
+var manager = preload("res://Src/Ships/ShipManager.gd")
 
 
 # Called when the node enters the scene tree for the first time.
@@ -42,6 +43,7 @@ func _process(delta):
 		shot.set_point_position(1,get_local_mouse_position())
 
 #creates cannonball with starting position
+#creates a line and initializes it's starting point at mouse location
 func create_shot():
 	shot = Line2D.new()
 	shot.width = 1
@@ -76,6 +78,8 @@ func shoot_shot():
 	pass
 
 #updates the ships body
+#loc: cell location
+#sig: signal so send to ShipCell
 func update_body(loc,sig):
 	if loc.y >= 0 and loc.y < body.size() and loc.x >= 0 and loc.x < body[0].size():
 		if body[loc.y][loc.x] != null:
@@ -110,26 +114,25 @@ func _cannon_selected(cannon):
 
 
 func cannon_shot(cannon_idx):
-	$TileMap.get
+	pass
 
 
 
 
-
-
-#WORK AROUND FIX LATER
-func _on_cannon_1_pressed():
-	if selected_cannon == "cannon1":
-		selected_cannon = null
-	else:
-		selected_cannon = "cannon1"
-		
-func _on_cannon_2_pressed():
-	if selected_cannon == "cannon2":
-		selected_cannon = null
-	else:
-		selected_cannon = "cannon2"
-	pass # Replace with function body.
+#
+##WORK AROUND FIX LATER
+#func _on_cannon_1_pressed():
+	#if selected_cannon == "cannon1":
+		#selected_cannon = null
+	#else:
+		#selected_cannon = "cannon1"
+		#
+#func _on_cannon_2_pressed():
+	#if selected_cannon == "cannon2":
+		#selected_cannon = null
+	#else:
+		#selected_cannon = "cannon2"
+	#pass # Replace with function body.
 
 
 
