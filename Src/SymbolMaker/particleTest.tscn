@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3v6bvqp5og6s"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_xnom1"]
+particle_flag_disable_z = true
+emission_shape_scale = Vector3(5, 5, 1)
+emission_shape = 1
+emission_sphere_radius = 1.0
+gravity = Vector3(0, -50, 0)
+
+[node name="ParticleTest" type="Node2D"]
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+amount = 80
+process_material = SubResource("ParticleProcessMaterial_xnom1")

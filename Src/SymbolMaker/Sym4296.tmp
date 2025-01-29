@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdde8c7582ll"]
+
+[ext_resource type="Script" path="res://Src/SymbolMaker/symbol_creator.gd" id="1_u0efs"]
+
+[node name="SymbolCreator" type="Node2D"]
+script = ExtResource("1_u0efs")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Line2D" type="Line2D" parent="."]
