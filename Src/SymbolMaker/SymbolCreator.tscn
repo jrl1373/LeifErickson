@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdde8c7582ll"]
+
+[ext_resource type="Script" path="res://Src/SymbolMaker/symbol_creator.gd" id="1_u0efs"]
+[ext_resource type="PackedScene" uid="uid://d0h4rgss4khrs" path="res://Src/SymbolMaker/Point.tscn" id="2_b3hpd"]
+
+[node name="SymbolCreator" type="Node2D"]
+script = ExtResource("1_u0efs")
+point = ExtResource("2_b3hpd")
+
+[node name="Line2D" type="Line2D" parent="."]
+
+[node name="Lines" type="Node2D" parent="."]
