@@ -14,7 +14,8 @@ func add_point(event):
 	
 	
 func snap_line(point):
-	line.set_point_position(1,point.position)
+	if line:
+		line.set_point_position(1,point.position)
 
 func _ready() -> void:
 	pass # Replace with function body.
@@ -28,21 +29,28 @@ func _process(delta: float) -> void:
 
 func _input(event):
 	# Mouse in viewport coordinates.
-	if event is InputEventMouseButton:
+	if event is InputEventMouseButton:	
 		print("Mouse Click/Unclick at: ", event.position)
 		if event.is_action_pressed("click"):
 			if line != null:
 				line.add_point(event.position)
 			line = Line2D.new()
+			line.default_color = Color('Green')
 			add_point(event)
 			line.add_point(event.position)
 			line.add_point(event.position)
 			$Lines.add_child(line)
 			
 		if event.is_action_pressed("deselect"):
-			line.remove_point(1)
-			line = null
+			if line:
+				line.remove_point(1)
+				line = null
 	elif event is InputEventMouseMotion:
-		print("Mouse Motion at: ", event.position)
+		var velocity = event.get_velocity()
+		print("Mouse velocity: ", velocity)
+		
+		$TestParticle.position = event.position
+		$TestParticle.amount = max(100,velocity.length())
+		
 		if line != null:
 			line.set_point_position(1,event.position)

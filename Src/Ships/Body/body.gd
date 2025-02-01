@@ -70,9 +70,10 @@ func shoot_shot():
 				print(cell)
 				cells.append(cell)
 		for cell in cells:
-			var atlas = $TileMap.get_cell_atlas_coords(0,cell)
-	#		print(atlas)
-			$TileMap.set_cell(0,cell,1,atlas)
+			var atlas = $TileMap/Layer1.get_cell_atlas_coords(cell)
+			print("atlas coord")
+			print(atlas)
+			$TileMap/Layer1.set_cell(cell,1,atlas,0)
 			update_body(cell,"damaged")
 		shot.queue_free()
 	pass
@@ -110,6 +111,7 @@ func _cannon_selected(cannon):
 	get_tree().call_group("Selectable", "deselect")
 	cannon.select()
 	selected_cannon = cannon
+	selected_crew = null
 	pass
 
 
@@ -140,4 +142,5 @@ func _on_pink_selected(name):
 	get_tree().call_group("Selectable", "deselect")
 	name.select()
 	selected_crew = name
+	selected_cannon = null
 	pass # Replace with function body.

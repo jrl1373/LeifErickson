@@ -1,12 +1,44 @@
-[gd_scene load_steps=3 format=3 uid="uid://bdde8c7582ll"]
+[gd_scene load_steps=6 format=3 uid="uid://bdde8c7582ll"]
 
 [ext_resource type="Script" path="res://Src/SymbolMaker/symbol_creator.gd" id="1_u0efs"]
 [ext_resource type="PackedScene" uid="uid://d0h4rgss4khrs" path="res://Src/SymbolMaker/Point.tscn" id="2_b3hpd"]
+[ext_resource type="Texture2D" uid="uid://dbxkcuu8uuoxj" path="res://Assets/SymbolMaker/hex2-8-1-sheet.png" id="3_ixmrs"]
+
+[sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_y2bhd"]
+points = PackedVector2Array(0, 0, 0, 0)
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_6l61c"]
+angle_min = 1.07288e-05
+angle_max = 180.0
+gravity = Vector3(0, -100, 0)
+scale_min = 100.0
+scale_max = 100.0
+color = Color(0.203922, 1, 1, 1)
 
 [node name="SymbolCreator" type="Node2D"]
 script = ExtResource("1_u0efs")
 point = ExtResource("2_b3hpd")
 
 [node name="Line2D" type="Line2D" parent="."]
+default_color = Color(1, 0.0823529, 1, 1)
 
 [node name="Lines" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -100
+z_as_relative = false
+position = Vector2(965, 542)
+scale = Vector2(7.5, 7.5)
+texture = ExtResource("3_ixmrs")
+
+[node name="Area2D" type="Area2D" parent="Sprite2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/Area2D"]
+shape = SubResource("ConvexPolygonShape2D_y2bhd")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[node name="TestParticle" type="GPUParticles2D" parent="."]
+scale = Vector2(20, 20)
+process_material = SubResource("ParticleProcessMaterial_6l61c")
