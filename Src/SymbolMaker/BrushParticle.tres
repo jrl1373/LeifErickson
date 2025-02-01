@@ -1,0 +1,14 @@
+[gd_resource type="ParticleProcessMaterial" format=3 uid="uid://xw5lq2c8vggn"]
+
+[resource]
+angle_min = 1.07288e-05
+angle_max = 1.07288e-05
+spread = 10.0
+initial_velocity_min = 5.0
+initial_velocity_max = 10.0
+gravity = Vector3(0, 0, 0)
+radial_accel_min = -2.23517e-06
+radial_accel_max = -2.23517e-06
+scale_min = 3.0
+scale_max = 3.0
+color = Color(0.203922, 1, 1, 1)

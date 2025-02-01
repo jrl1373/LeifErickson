@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7cultdck5l15"]
+
+[ext_resource type="Script" path="res://Src/SymbolMaker/brush_particle.gd" id="1_kninx"]
+[ext_resource type="Material" uid="uid://xw5lq2c8vggn" path="res://Src/SymbolMaker/BrushParticle.tres" id="2_t42it"]
+
+[node name="BrushParticle" type="Node2D"]
+script = ExtResource("1_kninx")
+
+[node name="TestParticle" type="GPUParticles2D" parent="."]
+position = Vector2(-3.05176e-05, 9.53674e-07)
+scale = Vector2(20, 20)
+emitting = false
+process_material = ExtResource("2_t42it")
+explosiveness = 0.96
+
+[connection signal="finished" from="TestParticle" to="." method="_on_test_particle_finished"]

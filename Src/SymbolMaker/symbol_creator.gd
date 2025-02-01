@@ -1,5 +1,6 @@
 extends Node2D
 @export var point: PackedScene
+@export var brushParticle: PackedScene
 @onready var _lines: Node2D = $Line2D
 var held = false
 var _currentline: Line2D = null
@@ -48,9 +49,12 @@ func _input(event):
 	elif event is InputEventMouseMotion:
 		var velocity = event.get_velocity()
 		print("Mouse velocity: ", velocity)
+		var particle = brushParticle.instantiate()
+		particle.rotate_particle(velocity.angle()+ PI)
+		particle.position = event.position
+		$CursorParticles.add_child(particle)
 		
-		$TestParticle.position = event.position
-		$TestParticle.amount = max(100,velocity.length())
 		
+	
 		if line != null:
 			line.set_point_position(1,event.position)
