@@ -1,0 +1,67 @@
+[gd_scene load_steps=11 format=3 uid="uid://dpve34qykkr62"]
+
+[ext_resource type="Texture2D" uid="uid://btijkc01hemlx" path="res://Assets/SymbolMaker/hex3-inner.png" id="1_6wnsl"]
+[ext_resource type="Texture2D" uid="uid://dxgey83nbom86" path="res://Assets/SymbolMaker/hex3-hexplate.png" id="2_y6uw3"]
+[ext_resource type="Texture2D" uid="uid://bskxohng0tgse" path="res://Assets/SymbolMaker/hex3-gutter.png" id="3_ao1wd"]
+[ext_resource type="Shader" uid="uid://b2qx51gr5dbd6" path="res://Src/SymbolMaker/Background/CornerShader.tres" id="4_v5p6y"]
+[ext_resource type="Texture2D" uid="uid://bnnap0jlhj3r1" path="res://Assets/SymbolMaker/hex3-holders1.png" id="5_lhvem"]
+[ext_resource type="Texture2D" uid="uid://crcj2p2dr25fx" path="res://Assets/SymbolMaker/hex3-keystones1.png" id="6_xa4ow"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_dcb3t"]
+shader = ExtResource("4_v5p6y")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_g4p0f"]
+shader = ExtResource("4_v5p6y")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_y2xtn"]
+shader = ExtResource("4_v5p6y")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cpifq"]
+shader = ExtResource("4_v5p6y")
+
+[node name="SymbolMakerBackground" type="Node2D"]
+
+[node name="CenterHex" type="Sprite2D" parent="."]
+texture = ExtResource("1_6wnsl")
+
+[node name="HexBorder" type="Sprite2D" parent="."]
+texture = ExtResource("2_y6uw3")
+
+[node name="HexBorder2" type="Sprite2D" parent="."]
+texture = ExtResource("3_ao1wd")
+
+[node name="BLCorner" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_dcb3t")
+texture = ExtResource("5_lhvem")
+
+[node name="Inner" type="Sprite2D" parent="BLCorner"]
+texture = ExtResource("6_xa4ow")
+
+[node name="BRCorner" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_g4p0f")
+texture = ExtResource("5_lhvem")
+flip_h = true
+
+[node name="Inner" type="Sprite2D" parent="BRCorner"]
+texture = ExtResource("6_xa4ow")
+flip_h = true
+
+[node name="TRCorner" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_y2xtn")
+texture = ExtResource("5_lhvem")
+flip_h = true
+flip_v = true
+
+[node name="Inner" type="Sprite2D" parent="TRCorner"]
+texture = ExtResource("6_xa4ow")
+flip_h = true
+flip_v = true
+
+[node name="TLCorner" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_cpifq")
+texture = ExtResource("5_lhvem")
+flip_v = true
+
+[node name="Inner" type="Sprite2D" parent="TLCorner"]
+texture = ExtResource("6_xa4ow")
+flip_v = true
