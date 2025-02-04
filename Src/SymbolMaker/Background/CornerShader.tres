@@ -1,6 +1,7 @@
 [gd_resource type="VisualShader" load_steps=7 format=3 uid="uid://b2qx51gr5dbd6"]
 
 [sub_resource type="VisualShaderNodeInput" id="VisualShaderNodeInput_ib81f"]
+expanded_output_ports = [0]
 input_name = "vertex"
 
 [sub_resource type="VisualShaderNodeInput" id="VisualShaderNodeInput_8uj4b"]
@@ -78,12 +79,12 @@ void vertex() {
 
 }
 "
-graph_offset = Vector2(-166.435, -42.0082)
+graph_offset = Vector2(-242.767, 0)
 mode = 1
 flags/light_only = false
 nodes/vertex/0/position = Vector2(1140, 100)
 nodes/vertex/2/node = SubResource("VisualShaderNodeInput_ib81f")
-nodes/vertex/2/position = Vector2(-120, 100)
+nodes/vertex/2/position = Vector2(-220, 180)
 nodes/vertex/3/node = SubResource("VisualShaderNodeInput_8uj4b")
 nodes/vertex/3/position = Vector2(-120, 400)
 nodes/vertex/4/node = SubResource("VisualShaderNodeIf_qh8q8")
@@ -94,5 +95,5 @@ nodes/vertex/7/node = SubResource("VisualShaderNodeVectorOp_kc1u8")
 nodes/vertex/7/position = Vector2(580, 100)
 nodes/vertex/8/node = SubResource("VisualShaderNodeVectorFunc_jj74s")
 nodes/vertex/8/position = Vector2(280, 380)
-nodes/vertex/connections = PackedInt32Array(2, 0, 4, 0, 5, 0, 0, 0, 2, 0, 5, 1, 4, 0, 7, 0, 7, 0, 5, 0, 3, 0, 8, 0, 8, 0, 7, 1)
+nodes/vertex/connections = PackedInt32Array(5, 0, 0, 0, 2, 0, 5, 1, 4, 0, 7, 0, 7, 0, 5, 0, 3, 0, 8, 0, 8, 0, 7, 1, 2, 0, 4, 0)
 nodes/fragment/0/position = Vector2(1000, 140)

@@ -1,2 +1,4 @@
+Shader
+VisualShader
 Resource
 TileSet

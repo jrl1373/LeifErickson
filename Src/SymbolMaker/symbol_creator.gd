@@ -46,7 +46,12 @@ func _input(event):
 			if line:
 				line.remove_point(1)
 				line = null
-	elif event is InputEventMouseMotion:
+				
+	if event.is_action_pressed("submit"):
+		var lines = $Lines.get_children()
+		for line in lines:
+			line.queue_free();
+	if event is InputEventMouseMotion:
 		var velocity = event.get_velocity()
 		print("Mouse velocity: ", velocity)
 		var particle = brushParticle.instantiate()
