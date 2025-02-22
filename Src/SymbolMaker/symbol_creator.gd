@@ -1,6 +1,7 @@
 extends Node2D
 @export var point: PackedScene
 @export var brushParticle: PackedScene
+@export var projectile: PackedScene
 @onready var _lines: Node2D = $Line2D
 var held = false
 var _currentline: Line2D = null
@@ -63,3 +64,7 @@ func _input(event):
 	
 		if line != null:
 			line.set_point_position(1,event.position)
+
+
+func _on_projectile_timer_timeout() -> void:
+	pass # Replace with function body.

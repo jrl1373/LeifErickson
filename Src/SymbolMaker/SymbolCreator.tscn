@@ -1,18 +1,26 @@
-[gd_scene load_steps=7 format=3 uid="uid://bdde8c7582ll"]
+[gd_scene load_steps=9 format=3 uid="uid://bdde8c7582ll"]
 
 [ext_resource type="Script" path="res://Src/SymbolMaker/symbol_creator.gd" id="1_u0efs"]
 [ext_resource type="PackedScene" uid="uid://d0h4rgss4khrs" path="res://Src/SymbolMaker/Point.tscn" id="2_b3hpd"]
 [ext_resource type="Texture2D" uid="uid://dbxkcuu8uuoxj" path="res://Assets/SymbolMaker/hex2-8-1-sheet.png" id="3_ixmrs"]
 [ext_resource type="PackedScene" uid="uid://c7cultdck5l15" path="res://Src/SymbolMaker/BrushParticle.tscn" id="3_wxbkx"]
+[ext_resource type="PackedScene" uid="uid://d1dg17vnqooob" path="res://Src/SymbolMaker/projectiles/LineProjectile.tscn" id="4_1msrc"]
 [ext_resource type="PackedScene" uid="uid://dpve34qykkr62" path="res://Src/SymbolMaker/Background/SymbolMakerBackground.tscn" id="5_6sw8b"]
 
 [sub_resource type="ConvexPolygonShape2D" id="ConvexPolygonShape2D_y2bhd"]
 points = PackedVector2Array(0, 0, 0, 0)
 
+[sub_resource type="Curve2D" id="Curve2D_y46u0"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 656, 60, 0, 0, 0, 0, 1249, 69, 0, 0, 0, 0, 1552, 549, 0, 0, 0, 0, 1273, 1040, 0, 0, 0, 0, 659, 1046, 0, 0, 0, 0, 389, 567, 0, 0, 0, 0, 656, 60)
+}
+point_count = 7
+
 [node name="SymbolCreator" type="Node2D"]
 script = ExtResource("1_u0efs")
 point = ExtResource("2_b3hpd")
 brushParticle = ExtResource("3_wxbkx")
+projectile = ExtResource("4_1msrc")
 
 [node name="Line2D" type="Line2D" parent="."]
 default_color = Color(1, 0.0823529, 1, 1)
@@ -41,3 +49,12 @@ anchor_mode = 0
 z_index = -10
 position = Vector2(965, 551)
 scale = Vector2(7.5, 7.5)
+
+[node name="projectileTimer" type="Timer" parent="."]
+wait_time = 0.3
+autostart = true
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_y46u0")
+
+[connection signal="timeout" from="projectileTimer" to="." method="_on_projectile_timer_timeout"]
