@@ -7,9 +7,9 @@ size = Vector2(100, 10)
 
 [node name="LineProjectile" type="Node2D"]
 script = ExtResource("1_07vfg")
-length = 100
+length = 10000
 velocity = 50.0
-heading = 100.0
+heading = 180.0
 
 [node name="Area2D" type="Area2D" parent="."]
 

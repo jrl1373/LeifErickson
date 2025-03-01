@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://w0sq0r38oy3e"]
+
+[ext_resource type="PackedScene" uid="uid://di3tumjwtrop2" path="res://Src/SymbolMaker/DrawingNode.tscn" id="1_l3xno"]
+[ext_resource type="Script" path="res://circles.gd" id="2_ficil"]
+
+[node name="DrawingNode" instance=ExtResource("1_l3xno")]
+
+[node name="Area2D" type="Area2D" parent="." index="0"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" index="0"]
+
+[node name="Circles" type="Node2D" parent="." index="1"]
+script = ExtResource("2_ficil")

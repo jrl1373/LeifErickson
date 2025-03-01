@@ -5,6 +5,7 @@ var start_pos = Vector2(0,0)
 var shot = Line2D.new()
 var body = []
 var cellScene = preload("res://src/Ships/Components/ShipCell.tscn")
+@export var lineProjectile : PackedScene
 var cannon_loc = []
 var selected_cannon = null
 var selected_crew = null
@@ -143,4 +144,24 @@ func _on_pink_selected(name):
 	name.select()
 	selected_crew = name
 	selected_cannon = null
+	pass # Replace with function body.
+
+
+func _on_timer_timeout() -> void:
+	var projectile = lineProjectile.instantiate()
+	print(projectile.get_child(0).get_child(0).shape)
+	var length = randi_range(10, 20)
+	projectile.heading = randi_range(135, 225)
+	projectile.velocity = randi_range(25, 75)
+	projectile.length = length
+	
+	
+	self.add_child(projectile)
+	
+	
+	
+	
+	
+	
+	
 	pass # Replace with function body.

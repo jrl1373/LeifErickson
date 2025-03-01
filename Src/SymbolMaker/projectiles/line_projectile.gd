@@ -18,9 +18,12 @@ func _process(delta: float) -> void:
 
 func init():
 	var line = Line2D.new()
+	var collision = RectangleShape2D.new()
+	collision.size.x = length
+	collision.size.y = 10
 	line.width = 10
 	line.add_point(Vector2(-length/2,0))
 	line.add_point(Vector2(length/2,0))
 	self.add_child(line)
 	self.rotate(deg_to_rad(heading))
-	$Area2D/CollisionShape2D.shape.size.x = length
+	$Area2D/CollisionShape2D.shape = collision
