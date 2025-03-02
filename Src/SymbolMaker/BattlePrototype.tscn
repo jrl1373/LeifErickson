@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://nmv8fokb54c"]
+
+[ext_resource type="PackedScene" uid="uid://di3tumjwtrop2" path="res://Src/SymbolMaker/DrawingNode.tscn" id="1_svmht"]
+[ext_resource type="Script" path="res://Src/SymbolMaker/battle_prototype.gd" id="1_xdkh6"]
+[ext_resource type="PackedScene" uid="uid://btn143t5mjhjx" path="res://Src/SymbolMaker/projectiles/SimpleProjectile.tscn" id="2_cl7i4"]
+
+[node name="BattlePrototype" type="Node2D"]
+script = ExtResource("1_xdkh6")
+simple_projectile = ExtResource("2_cl7i4")
+
+[node name="DrawingNode" parent="." instance=ExtResource("1_svmht")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="ProjectileTimer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[connection signal="timeout" from="ProjectileTimer" to="." method="_on_projectile_timer_timeout"]

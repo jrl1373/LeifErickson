@@ -9,5 +9,5 @@
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" index="0"]
 
-[node name="Circles" type="Node2D" parent="." index="1"]
+[node name="Circles2" type="Node2D" parent="." index="1"]
 script = ExtResource("2_ficil")

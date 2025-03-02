@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://btn143t5mjhjx"]
+
+[ext_resource type="Texture2D" uid="uid://btijkc01hemlx" path="res://Assets/SymbolMaker/hex3-inner.png" id="1_01ixj"]
+[ext_resource type="Script" path="res://Src/SymbolMaker/projectiles/simple_projectile.gd" id="1_8plye"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mq0qb"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xwfb8"]
+radius = 63.0079
+
+[node name="SimpleProjectile" type="Node2D"]
+script = ExtResource("1_8plye")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_01ixj")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_mq0qb")
+
+[node name="Outside" type="Area2D" parent="."]
+visible = false
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Outside"]
+shape = SubResource("CircleShape2D_xwfb8")
+
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]

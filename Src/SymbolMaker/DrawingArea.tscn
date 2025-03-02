@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://crrv1d2imx4pj"]
+
+[node name="DrawingArea" type="Node2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
