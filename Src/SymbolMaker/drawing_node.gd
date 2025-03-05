@@ -76,7 +76,7 @@ func snap_points(point):
 			collision_points.sort()
 			var new_area = Area2D.new()
 			var new_col = CollisionPolygon2D.new()
-			new_col.build_mode = 1
+			new_col.build_mode = 0
 			new_col.polygon = current_points.slice(collision_points[0],collision_points[1])
 			print(len(new_col.polygon))
 			new_area.add_child(new_col)

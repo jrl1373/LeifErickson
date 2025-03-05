@@ -28,7 +28,7 @@ func init():
 
 
 func check_if_captured():
-	var polygon = area.get_child(0).polygon
+	var polygon = area.get_child(0)
 	if polygon.is_class("CollisionPolygon2D"):
 		var point_count = polygon.polygon.size()
 		var a = null
