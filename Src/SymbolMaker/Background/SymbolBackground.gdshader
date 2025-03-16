@@ -7,13 +7,13 @@ void vertex() {
 	if (on) {
 		vec2 position = VERTEX;
 		float time = TIME ;
-		
+
 		float zoom = (sin(TIME*speed)+1.8) * magnitude;
-		
+
 		vec2 final_zoom  = vec2(zoom, zoom);
 		VERTEX = position * final_zoom;
 	}
-	
+
 }
 
 void fragment() {

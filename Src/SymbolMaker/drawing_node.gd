@@ -1,8 +1,9 @@
 extends Node2D
 var point = preload("res://Src/SymbolMaker/Point.tscn")
+var circle = preload("res://Src/SymbolMaker/Symbols/Circle.tscn")
 var can_draw = false
-var current_line = null;
-var current_points = null;
+var current_line = null
+var current_points = null
 var point_distance = 40
 var current_point_distance = 0
 var last_point = null
@@ -16,7 +17,9 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	collision_points = [null,null]
+	
+	#if collision_points != [null,null]:
+		#collision_points = [null,null]
 	
 	pass
 	
@@ -74,13 +77,13 @@ func snap_points(point):
 	#		find the location of the two points connected
 			collision_points[1] = current_points.find(point.position)
 			collision_points.sort()
-			var new_area = Area2D.new()
-			var new_col = CollisionPolygon2D.new()
-			new_col.build_mode = 0
-			new_col.polygon = current_points.slice(collision_points[0],collision_points[1])
-			print(len(new_col.polygon))
-			new_area.add_child(new_col)
-			$Circles.add_child(new_area)
+
+			var polygon = current_points.slice(collision_points[0],collision_points[1])
+			var new_circle = circle.instantiate()
+			new_circle.init(polygon,current_line.points)
+			
+			$Circles.add_child(new_circle)
+			$Line.remove_child(current_line)
 			print(collision_points)
 			collision_points = [null,null]
 			clear_points()

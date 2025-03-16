@@ -1,19 +1,37 @@
-[gd_scene load_steps=4 format=3 uid="uid://nmv8fokb54c"]
+[gd_scene load_steps=6 format=3 uid="uid://nmv8fokb54c"]
 
 [ext_resource type="PackedScene" uid="uid://di3tumjwtrop2" path="res://Src/SymbolMaker/DrawingNode.tscn" id="1_svmht"]
 [ext_resource type="Script" path="res://Src/SymbolMaker/battle_prototype.gd" id="1_xdkh6"]
 [ext_resource type="PackedScene" uid="uid://btn143t5mjhjx" path="res://Src/SymbolMaker/projectiles/SimpleProjectile.tscn" id="2_cl7i4"]
+[ext_resource type="PackedScene" uid="uid://bl3dduyi7q2nj" path="res://Src/Enemies/Waddler.tscn" id="3_k14e8"]
+[ext_resource type="PackedScene" uid="uid://cq7ltify3xahm" path="res://Src/Character/MC.tscn" id="5_5eiyn"]
 
 [node name="BattlePrototype" type="Node2D"]
 script = ExtResource("1_xdkh6")
 simple_projectile = ExtResource("2_cl7i4")
+enemy = ExtResource("3_k14e8")
 
 [node name="DrawingNode" parent="." instance=ExtResource("1_svmht")]
 
 [node name="Camera2D" type="Camera2D" parent="."]
+process_callback = 0
 
 [node name="ProjectileTimer" type="Timer" parent="."]
 wait_time = 0.5
 autostart = true
 
+[node name="KILLZONE" type="Area2D" parent="." groups=["KILLBOX"]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="KILLZONE"]
+build_mode = 1
+polygon = PackedVector2Array(-1200, -1200, -1200, 1200, 1200, 1200, 1200, -1200)
+
+[node name="WaddlerTimer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[node name="Mc" parent="." instance=ExtResource("5_5eiyn")]
+
+[connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
 [connection signal="timeout" from="ProjectileTimer" to="." method="_on_projectile_timer_timeout"]
+[connection signal="timeout" from="WaddlerTimer" to="." method="_on_waddler_timer_timeout"]

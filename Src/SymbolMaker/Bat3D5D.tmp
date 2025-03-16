@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://nmv8fokb54c"]
+
+[ext_resource type="PackedScene" uid="uid://di3tumjwtrop2" path="res://Src/SymbolMaker/DrawingNode.tscn" id="1_svmht"]
+[ext_resource type="Script" path="res://Src/SymbolMaker/battle_prototype.gd" id="1_xdkh6"]
+[ext_resource type="PackedScene" uid="uid://btn143t5mjhjx" path="res://Src/SymbolMaker/projectiles/SimpleProjectile.tscn" id="2_cl7i4"]
+
+[node name="BattlePrototype" type="Node2D"]
+script = ExtResource("1_xdkh6")
+simple_projectile = ExtResource("2_cl7i4")
+
+[node name="DrawingNode" parent="." instance=ExtResource("1_svmht")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="ProjectileTimer" type="Timer" parent="."]
+one_shot = true
+autostart = true
+
+[node name="KILLZONE" type="Area2D" parent="." groups=["KILLBOX"]]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="KILLZONE"]
+build_mode = 1
+polygon = PackedVector2Array(-1200, -1200, -1200, 1200, 1200, 1200, 1200, -1200)
+
+[connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
+[connection signal="timeout" from="ProjectileTimer" to="." method="_on_projectile_timer_timeout"]
