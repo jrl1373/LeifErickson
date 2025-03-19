@@ -11,3 +11,9 @@
 
 [node name="Circles2" type="Node2D" parent="." index="1"]
 script = ExtResource("2_ficil")
+
+[node name="EnergyBar2" type="ProgressBar" parent="." index="5"]
+offset_right = 128.0
+offset_bottom = 27.0
+max_value = 1000.0
+value = 1000.0

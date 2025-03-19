@@ -10,3 +10,9 @@ script = ExtResource("1_o4xgv")
 [node name="Points" type="Node2D" parent="."]
 
 [node name="Line" type="Node2D" parent="."]
+
+[node name="EnergyBar" type="ProgressBar" parent="."]
+offset_right = 128.0
+offset_bottom = 27.0
+max_value = 1000.0
+value = 1000.0
