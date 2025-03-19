@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=3 uid="uid://cq7ltify3xahm"]
+[gd_scene load_steps=50 format=3 uid="uid://cq7ltify3xahm"]
 
 [ext_resource type="Script" path="res://Src/Character/mc.gd" id="1_nykrx"]
 [ext_resource type="Texture2D" uid="uid://caot2njv6kmqe" path="res://Assets/MC/firststandingdown.png" id="2_57gf3"]
@@ -319,6 +319,9 @@ animations = [{
 "speed": 18.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j1tq5"]
+size = Vector2(80, 144)
+
 [node name="Mc" type="Node2D"]
 script = ExtResource("1_nykrx")
 
@@ -326,3 +329,24 @@ script = ExtResource("1_nykrx")
 scale = Vector2(5, 5)
 sprite_frames = SubResource("SpriteFrames_8eudi")
 animation = &"running_down"
+
+[node name="InvincibleTimer" type="Timer" parent="."]
+wait_time = 2.0
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(8, 8)
+shape = SubResource("RectangleShape2D_j1tq5")
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+offset_left = -32.0
+offset_top = -80.0
+offset_right = 48.0
+offset_bottom = -69.0
+value = 100.0
+
+[connection signal="timeout" from="InvincibleTimer" to="." method="_on_invincible_timer_timeout"]
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

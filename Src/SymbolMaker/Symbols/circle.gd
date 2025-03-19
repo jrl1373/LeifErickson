@@ -72,7 +72,7 @@ func check_if_captured(point):
 				print(min_dist)
 				return 
 		point.remove_from_group('points')
-		point.queue_free()
+		point.is_captured()
 
 		#self.queue_free()
 	pass # Replace with function body.

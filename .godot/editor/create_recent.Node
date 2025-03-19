@@ -1,11 +1,12 @@
-AnimatedSprite2D
-Line2D
-Node2D
-Timer
-CollisionPolygon2D
+ProgressBar
 CollisionShape2D
 Area2D
+Timer
+AnimatedSprite2D
 AudioStreamPlayer2D
+Line2D
+Node2D
+CollisionPolygon2D
 CenterContainer
 Camera2D
 Sprite2D

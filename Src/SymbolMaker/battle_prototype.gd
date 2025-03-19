@@ -48,7 +48,7 @@ func entered(point, area):
 		if circle.get_child(0) == area:
 			circle.check_collision(point)
 			
-	
+
 
 
 func _on_tree_entered() -> void:

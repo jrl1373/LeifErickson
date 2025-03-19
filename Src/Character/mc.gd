@@ -2,6 +2,8 @@ extends Node2D
 var direction = Vector2.ZERO
 var heading = 0
 var speed = 300
+var health = 100
+var invincible = false
 var last_direction = 'down'
 var animation = "down"
 
@@ -39,4 +41,24 @@ func change_animation(direction):
 	var cur_animation = $AnimatedSprite2D.animation
 	$AnimatedSprite2D.animation = "running_"+direction
 	
+func hit(damage):
+	if not invincible:
+		print($AnimatedSprite2D.modulate)
+		health = max(0,health - damage)
+		$HealthBar.value = health
+		invincible = true
+		$AnimatedSprite2D.modulate = Color(1,.5,.5,1)
+		$InvincibleTimer.start()
 	
+	
+
+
+func _on_invincible_timer_timeout() -> void:
+	$AnimatedSprite2D.modulate = Color(1,1,1,1)
+	invincible = false
+	pass # Replace with function body.
+
+
+func _on_area_2d_area_entered(area: Area2D) -> void:
+	hit(area.damage)
+	pass # Replace with function body.

@@ -5,6 +5,7 @@ extends Node2D
 @export var velocity: float
 @export var heading: float
 var RADIUS = 20
+var caught = false
 signal captured(point)
 signal entered(point, area)
 var area = null
@@ -24,6 +25,7 @@ func _process(delta: float) -> void:
 
 
 func init():
+	$AnimatedSprite2D.play()
 	pass
 
 
@@ -56,14 +58,18 @@ func check_if_captured():
 				minpointa = a
 				minpointb = b
 			
-			if dist < 63.2:
+			if dist < 20:
 				print(min_dist)
 				return 
 		captured.emit(self)
 		#self.queue_free()
 	pass # Replace with function body.
-
-
+	
+func is_captured():
+	velocity = 0
+	$AnimatedSprite2D.animation = 'caught'
+	caught = true	
+	
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.is_in_group('KILLBOX'):
 		self.queue_free()
@@ -78,3 +84,9 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 
 func _on_area_2d_area_exited(area: Area2D) -> void:
 	self.area = null
+
+
+func _on_animated_sprite_2d_animation_finished() -> void:
+	if caught:
+		queue_free()
+	pass # Replace with function body.

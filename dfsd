@@ -1,0 +1,259 @@
+[1mdiff --git a/.godot/editor/body.tscn-editstate-aa4538f9bd3713ea8342bab7e73816ec.cfg b/.godot/editor/body.tscn-editstate-aa4538f9bd3713ea8342bab7e73816ec.cfg[m
+[1mindex 65f1bbb..37f2829 100644[m
+[1m--- a/.godot/editor/body.tscn-editstate-aa4538f9bd3713ea8342bab7e73816ec.cfg[m
+[1m+++ b/.godot/editor/body.tscn-editstate-aa4538f9bd3713ea8342bab7e73816ec.cfg[m
+[36m@@ -8,7 +8,7 @@[m [mAnim={[m
+ "grid_snap_active": true,[m
+ "grid_step": Vector2(16, 16),[m
+ "grid_visibility": 1,[m
+[31m-"ofs": Vector2(-100.866, 43.0063),[m
+[32m+[m[32m"ofs": Vector2(-114.805, -78.4553),[m
+ "primary_grid_step": Vector2i(8, 8),[m
+ "show_group_gizmos": true,[m
+ "show_guides": true,[m
+[36m@@ -34,7 +34,7 @@[m [mAnim={[m
+ "snap_rotation_step": 0.261799,[m
+ "snap_scale": false,[m
+ "snap_scale_step": 0.1,[m
+[31m-"zoom": 2.51984[m
+[32m+[m[32m"zoom": 6.72717[m
+ }[m
+ 3D={[m
+ "fov": 70.01,[m
+[36m@@ -175,4 +175,4 @@[m [mAnim={[m
+ "zfar": 4000.01,[m
+ "znear": 0.05[m
+ }[m
+[31m-selected_nodes=Array[NodePath]([NodePath("/root/@EditorNode@16886/@Panel@13/@VBoxContainer@14/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@25/DockVSplitCenter/@VSplitContainer@52/@VBoxContainer@53/@PanelContainer@98/MainScreen/@CanvasItemEditor@9272/@VSplitContainer@9094/@HSplitContainer@9096/@HSplitContainer@9098/@Control@9099/@SubViewportContainer@9100/@SubViewport@9101/SymbolCreator/TestParticle")])[m
+[32m+[m[32mselected_nodes=Array[NodePath]([NodePath("/root/@EditorNode@16886/@Panel@13/@VBoxContainer@14/DockHSplitLeftL/DockHSplitLeftR/DockHSplitMain/@VBoxContainer@25/DockVSplitCenter/@VSplitContainer@52/@VBoxContainer@53/@PanelContainer@98/MainScreen/@CanvasItemEditor@9272/@VSplitContainer@9094/@HSplitContainer@9096/@HSplitContainer@9098/@Control@9099/@SubViewportContainer@9100/@SubViewport@9101/SymbolCreator/CursorParticles")])[m
+[1mdiff --git a/.godot/editor/body.tscn-folding-aa4538f9bd3713ea8342bab7e73816ec.cfg b/.godot/editor/body.tscn-folding-aa4538f9bd3713ea8342bab7e73816ec.cfg[m
+[1mindex 9a0804b..d0d48e2 100644[m
+[1m--- a/.godot/editor/body.tscn-folding-aa4538f9bd3713ea8342bab7e73816ec.cfg[m
+[1m+++ b/.godot/editor/body.tscn-folding-aa4538f9bd3713ea8342bab7e73816ec.cfg[m
+[36m@@ -1,5 +1,5 @@[m
+ [folding][m
+ [m
+[31m-node_unfolds=[NodePath("."), PackedStringArray("cell"), NodePath("TileMap"), PackedStringArray("layer__array"), NodePath("TileMap/Layer1"), PackedStringArray("tile_set"), NodePath("Cannons/Cannon1"), PackedStringArray("Transform"), NodePath("Cannons/Cannon2"), PackedStringArray("Transform"), NodePath("Crew/Pink"), PackedStringArray("Transform")][m
+[32m+[m[32mnode_unfolds=[NodePath("."), PackedStringArray("cell"), NodePath("TileMap"), PackedStringArray("layer__array"), NodePath("Cannons/Cannon1"), PackedStringArray("Transform"), NodePath("Cannons/Cannon2"), PackedStringArray("Transform"), NodePath("Crew/Pink"), PackedStringArray("Transform")][m
+ resource_unfolds=["res://Src/Ships/Body/body.tscn::TileSet_hdd3t", PackedStringArray()][m
+ nodes_folded=[][m
+[1mdiff --git a/.godot/editor/create_recent.Node b/.godot/editor/create_recent.Node[m
+[1mindex 3d29806..e12abfe 100644[m
+[1m--- a/.godot/editor/create_recent.Node[m
+[1m+++ b/.godot/editor/create_recent.Node[m
+[36m@@ -1,10 +1,10 @@[m
+[32m+[m[32mSprite2D[m
+[32m+[m[32mNode2D[m
+ GPUParticles2D[m
+ CollisionShape2D[m
+ Area2D[m
+ Camera2D[m
+[31m-Sprite2D[m
+ Timer[m
+[31m-Node2D[m
+ Node[m
+ AnimatedSprite2D[m
+ Button[m
+[36m@@ -12,4 +12,3 @@[m [mHBoxContainer[m
+ Panel[m
+ TileMap[m
+ TextureRect[m
+[31m-StaticBody2D[m
+[1mdiff --git a/.godot/editor/create_recent.Resource b/.godot/editor/create_recent.Resource[m
+[1mindex 00ffa46..f192c22 100644[m
+[1m--- a/.godot/editor/create_recent.Resource[m
+[1m+++ b/.godot/editor/create_recent.Resource[m
+[36m@@ -1,2 +1,3 @@[m
+[32m+[m[32mVisualShader[m
+ Resource[m
+ TileSet[m
+[1mdiff --git a/.godot/editor/editor_layout.cfg b/.godot/editor/editor_layout.cfg[m
+[1mindex 9279953..7c8a363 100644[m
+[1m--- a/.godot/editor/editor_layout.cfg[m
+[1m+++ b/.godot/editor/editor_layout.cfg[m
+[36m@@ -13,14 +13,14 @@[m [mdock_split_2=-16[m
+ dock_split_3=0[m
+ dock_hsplit_1=0[m
+ dock_hsplit_2=318[m
+[31m-dock_hsplit_3=-589[m
+[32m+[m[32mdock_hsplit_3=-680[m
+ dock_hsplit_4=0[m
+ dock_filesystem_split=0[m
+ dock_filesystem_display_mode=0[m
+ dock_filesystem_file_sort=0[m
+ dock_filesystem_file_list_display_mode=1[m
+[31m-dock_filesystem_selected_paths=PackedStringArray("res://Assets/SymbolMaker/hex2-8-1-sheet.png")[m
+[31m-dock_filesystem_uncollapsed_paths=PackedStringArray("res://", "res://Src/", "res://Src/Views/1v1View/", "res://Src/Utilities/ShipGenerator/", "res://Src/SymbolMaker/", "res://Src/Ships/Body/", "res://Saves/", "res://Saves/ShipPresets/", "res://Assets/", "res://Assets/SymbolMaker/")[m
+[32m+[m[32mdock_filesystem_selected_paths=PackedStringArray("res://Src/SymbolMaker/Background/CornerShader.tres")[m
+[32m+[m[32mdock_filesystem_uncollapsed_paths=PackedStringArray("res://", "res://Src/", "res://Src/Views/1v1View/", "res://Src/Utilities/", "res://Src/Utilities/ShipGenerator/", "res://Src/SymbolMaker/", "res://Src/SymbolMaker/Background/", "res://Src/Ships/Cannons/", "res://Src/Ships/Body/", "res://Saves/", "res://Saves/ShipPresets/", "res://Assets/")[m
+ dock_bottom=[][m
+ dock_closed=[][m
+ dock_filesystem_h_split_offset=240[m
+[36m@@ -31,25 +31,25 @@[m [mdock_5="Inspector,Node,History"[m
+ [m
+ [EditorNode][m
+ [m
+[31m-open_scenes=PackedStringArray("res://Src/Ships/Body/body.tscn", "res://Src/SymbolMaker/SymbolCreator.tscn")[m
+[31m-center_split_offset=-342[m
+[32m+[m[32mopen_scenes=PackedStringArray("res://Src/Ships/Body/body.tscn", "res://Src/SymbolMaker/SymbolCreator.tscn", "res://Src/SymbolMaker/Point.tscn", "res://Src/SymbolMaker/particleTest.tscn", "res://Src/SymbolMaker/BrushParticle.tscn", "res://Src/SymbolMaker/Background/SymbolMakerBackground.tscn")[m
+[32m+[m[32mcenter_split_offset=-553[m
+ selected_default_debugger_tab_idx=0[m
+[31m-selected_main_editor_idx=2[m
+[31m-current_scene="res://Src/SymbolMaker/SymbolCreator.tscn"[m
+[31m-selected_bottom_panel_item=0[m
+[32m+[m[32mselected_main_editor_idx=0[m
+[32m+[m[32mcurrent_scene="res://Src/SymbolMaker/Background/SymbolMakerBackground.tscn"[m
+[32m+[m[32mselected_bottom_panel_item=7[m
+ [m
+ [ScriptEditor][m
+ [m
+[31m-open_scripts=["res://Src/Ships/Body/body.gd", "res://Src/Ships/Cannons/Cannon.gd", "res://Src/Crew/Crew.gd", "res://Saves/ShipPresets/ship1.txt", "res://Src/SymbolMaker/symbol_creator.gd"][m
+[32m+[m[32mopen_scripts=["res://Src/Ships/Body/body.gd", "res://Src/SymbolMaker/brush_particle.gd", "res://Src/Ships/Cannons/Cannon.gd", "res://Src/SymbolMaker/point.gd", "res://Saves/ShipPresets/ship1.txt", "res://Src/SymbolMaker/symbol_creator.gd"][m
+ selected_script="res://Src/SymbolMaker/symbol_creator.gd"[m
+[31m-open_help=["TileMapLayer"][m
+[32m+[m[32mopen_help=[][m
+ script_split_offset=70[m
+ list_split_offset=0[m
+ zoom_factor=0.9375[m
+ [m
+ [ShaderEditor][m
+ [m
+[31m-open_shaders=["res://Src/Shaders/BasicSelected.gdshader"][m
+[32m+[m[32mopen_shaders=["res://Src/Shaders/BasicSelected.gdshader", "res://Src/SymbolMaker/Background/CornerShader.tres"][m
+ split_offset=0[m
+[31m-selected_shader="res://Src/Shaders/BasicSelected.gdshader"[m
+[32m+[m[32mselected_shader="res://Src/SymbolMaker/Background/CornerShader.tres"[m
+ text_shader_zoom_factor=1.0[m
+[1mdiff --git a/.godot/editor/filesystem_cache8 b/.godot/editor/filesystem_cache8[m
+[1mindex 319fe1a..a99189f 100644[m
+[1m--- a/.godot/editor/filesystem_cache8[m
+[1m+++ b/.godot/editor/filesystem_cache8[m
+[36m@@ -1,83 +1,97 @@[m
+ ea4bc82a6ad023ab7ee23ee620429895[m
+[31m-::res://::1738426446[m
+[31m-hi.txt::TextFile::-1::1730576691::0::1::::<><>::[m
+[31m-icon.svg::CompressedTexture2D::6293180717148952105::1718206302::1731974849::1::::<><>::[m
+[31m-::res://Assets/::1738197626[m
+[31m-Black_border.png::CompressedTexture2D::7941539307738863993::1719003788::1731974849::1::::<><>::[m
+[31m-cannonfire2.2.png::CompressedTexture2D::382429462760817233::1722965887::1731974849::1::::<><>::[m
+[31m-damaged_ship-001.png::CompressedTexture2D::8457958342731607310::1720562168::1731974849::1::::<><>::[m
+[31m-sails-0001.png::CompressedTexture2D::7671253424357774043::1720566696::1731974849::1::::<><>::[m
+[31m-ship-0001-2.png::CompressedTexture2D::7193593342567297946::1720567024::1731974849::1::::<><>::[m
+[31m-Ship-0001.png::CompressedTexture2D::1741010446435607543::1719008726::1731974849::1::::<><>::[m
+[31m-Ships tiles-2.png.png::CompressedTexture2D::534305735414244029::1718893247::1731974849::1::::<><>::[m
+[31m-::res://Assets/Crew/::1731974849[m
+[31m-walking_pink.png::CompressedTexture2D::5831813518552460306::1725991213::1731974849::1::::<><>::[m
+[31m-::res://Assets/Foozle_2DT0013_Scallywag_Ships/::1731974849[m
+[31m-Boat Fx Animations.png::CompressedTexture2D::3501707714344551883::1718206760::1731974849::1::::<><>::[m
+[31m-Readme.txt::TextFile::-1::1718207712::0::1::::<><>::[m
+[31m-Ships Mockup.png::CompressedTexture2D::2755657713013916587::1718206345::1731974849::1::::<><>::[m
+[31m-Ships tiles.png::CompressedTexture2D::9133238105502717617::1718206345::1731974849::1::::<><>::[m
+[31m-::res://Assets/SymbolMaker/::1738197658[m
+[31m-hex2-8-1-sheet.png::CompressedTexture2D::7277543407466174799::1738197607::1738197658::1::::<><>::[m
+[31m-::res://Saves/::1730570747[m
+[31m-::res://Saves/ShipPresets/::1732400483[m
+[31m-ship1.txt::TextFile::-1::1732400483::0::1::::<><>::[m
+[31m-::res://Src/::1738197477[m
+[31m-::res://Src/Crew/::1732399385[m
+[31m-Crew.gd::GDScript::-1::1731977552::0::1::::<>Node2D<>::[m
+[31m-Crew.tscn::PackedScene::5063597243943373082::1732399385::0::1::::<><>::res://Src/Crew/Crew.gd<>uid://cpc8d72ky77as::::res://Assets/Crew/walking_pink.png<>res://Src/Shaders/BasicSelected.gdshader[m
+[31m-::res://Src/Encounters/::1732399386[m
+[31m-dialogue.gd::GDScript::-1::1731544637::0::1::::<>Node2D<>::[m
+[31m-dialogue.tscn::PackedScene::2336334894636227481::1732399386::0::1::::<><>::res://Src/Encounters/dialogue.gd[m
+[31m-dialoguebox.gd::GDScript::-1::1731544637::0::1::::<>Panel<>::[m
+[31m-encounterint.gd::GDScript::-1::1731544637::0::1::::<>Node2D<>::[m
+[31m-encounterint.tscn::PackedScene::3853068385345758133::1732399386::0::1::::<><>::res://Src/Encounters/encounterint.gd<>uid://8j0dhdgrn82h::::res://Src/Encounters/dialogue.tscn[m
+[31m-::res://Src/Shaders/::1738200456[m
+[31m-BasicSelected.gdshader::Shader::-1::1738200456::0::1::::<><>::[m
+[31m-::res://Src/Ships/::1725994629[m
+[31m-cannon_ball.tscn::PackedScene::5834153147065410921::1720639674::0::1::::<><>::res://Ships/cannon_ball.gd<>uid://cvwp1cu3uauij::::res://icon.svg[m
+[31m-ship.tscn::PackedScene::1315382163263535575::1720639674::0::1::::<><>::uid://d3ehdkm6xuml2::::res://Assets/Foozle_2DT0013_Scallywag_Ships/Ships tiles.png<>res://Ships/ship.gd<>uid://cpedwdlx5g7fp::::res://Ships/cannon_ball.tscn<>uid://y2mgm75hf3mx::::res://Assets/Ship-0001.png[m
+[31m-ShipManager.gd::GDScript::-1::1725994629::0::1::::<>Node2D<>::[m
+[31m-::res://Src/Ships/Body/::1738200448[m
+[31m-BasicBody.tscn::PackedScene::5849919185488021718::1732399738::0::1::::<><>::[m
+[31m-body.gd::GDScript::-1::1738197514::0::1::::<>Node2D<>::[m
+[31m-body.tscn::PackedScene::6912086254733076310::1738200448::0::1::::<><>::res://Src/Ships/Body/body.gd<>uid://daqvowv8eyr1c::::res://Assets/ship-0001-2.png<>uid://dsrdlq65i4q0u::::res://Assets/damaged_ship-001.png<>uid://dhkaoned3mli6::::res://Assets/sails-0001.png<>uid://y2mgm75hf3mx::::res://Assets/Ship-0001.png<>uid://d3ehdkm6xuml2::::res://Assets/Foozle_2DT0013_Scallywag_Ships/Ships tiles.png<>uid://d1rrxt78r1ukw::::res://Src/Ships/Cannons/Cannon.tscn<>uid://cee3ybclsu5lm::::res://Src/Crew/Crew.tscn[m
+[31m-::res://Src/Ships/Cannons/::1732399385[m
+[31m-Cannon.gd::GDScript::-1::1731977578::0::1::::<>Node2D<>::[m
+[31m-Cannon.tscn::PackedScene::9020340718524529978::1732399385::0::1::::<><>::res://Src/Ships/Cannons/Cannon.gd<>res://Src/Shaders/BasicSelected.gdshader<>uid://fpis7lgk8k86::::res://Assets/cannonfire2.2.png<>uid://d3ehdkm6xuml2::::res://Assets/Foozle_2DT0013_Scallywag_Ships/Ships tiles.png[m
+[31m-cannon_ball.gd::GDScript::-1::1718764454::0::1::::<>Node2D<>::[m
+[31m-cannon_ball.tscn::PackedScene::6111841259156103291::1730570623::0::1::::<><>::res://Src/Ships/Cannons/cannon_ball.gd<>uid://cvwp1cu3uauij::::res://icon.svg[m
+[31m-::res://Src/Ships/Complete/::1730570624[m
+[31m-Enemy.tscn::PackedScene::4359514878175199999::1720561584::0::1::::<><>::uid://y2mgm75hf3mx::::res://Assets/Ship-0001.png[m
+[31m-ship.gd::GDScript::-1::1719022089::0::1::::<>CharacterBody2D<>::[m
+[31m-ship.tscn::PackedScene::2464531092288209467::1730570624::0::1::::<><>::res://Src/Ships/Complete/ship.gd<>uid://ctcverjg66bh8::::res://Src/Ships/Cannons/cannon_ball.tscn<>uid://y2mgm75hf3mx::::res://Assets/Ship-0001.png[m
+[31m-::res://Src/Ships/Components/::1732399385[m
+[31m-ShipCell.gd::GDScript::-1::1731544661::0::1::::<>Node2D<>::[m
+[31m-ShipCell.tscn::PackedScene::8260881058339556044::1732399385::0::1::::<><>::res://Src/Ships/Components/ShipCell.gd[m
+[31m-::res://Src/SymbolMaker/::1738200456[m
+[31m-particleTest.tscn::PackedScene::6783366063085432824::1738197477::0::1::::<><>::[m
+[31m-point.gd::GDScript::-1::1738197477::0::1::::<>Node2D<>::[m
+[31m-Point.tscn::PackedScene::8930225281398715344::1738197477::0::1::::<><>::res://Src/SymbolMaker/point.gd[m
+[31m-SymbolCreator.tscn::PackedScene::76573008909646549::1738200456::0::1::::<><>::res://Src/SymbolMaker/symbol_creator.gd<>uid://d0h4rgss4khrs::::res://Src/SymbolMaker/Point.tscn<>uid://dbxkcuu8uuoxj::::res://Assets/SymbolMaker/hex2-8-1-sheet.png[m
+[31m-symbol_creator.gd::GDScript::-1::1738200000::0::1::::<>Node2D<>::[m
+[31m-::res://Src/Utilities/::1732399649[m
+[31m-::res://Src/Utilities/ShipGenerator/::1732399958[m
+[31m-ShipGenerator.tscn::PackedScene::1042230319845964083::1732399958::0::1::::<><>::res://Src/Utilities/ShipGenerator/ship_generator.gd[m
+[31m-ShipLoader.gd::GDScript::-1::1732399696::0::1::::<>Node<>::[m
+[31m-ship_generator.gd::GDScript::-1::1732399666::0::1::::<>Node2D<>::[m
+[31m-::res://Src/Views/::1720547454[m
+[31m-::res://Src/Views/1v1View/::1731544661[m
+[31m-1v1View.gd::GDScript::-1::1731544661::0::1::::<>Node2D<>::[m
+[31m-1v1View.tscn::PackedScene::5327091766499589502::1730570624::0::1::::<><>::res://Src/Views/1v1View/1v1View.gd<>uid://r21sjw5aihmd::::res://Src/Views/TacticalView/TacticalView.tscn<>uid://css3hsjrdihof::::res://Src/Views/PlayerView/PlayerView.tscn[m
+[31m-::res://Src/Views/MergedView/::1730570624[m
+[31m-MergedView.gd::GDScript::-1::1720545069::0::1::::<>Node2D<>::[m
+[31m-MergedView.tscn::PackedScene::1724501106278980162::1730570624::0::1::::<><>::res://Src/Views/MergedView/MergedView.gd<>uid://cndfn5dle7ba2::::res://Src/World/world.tscn<>uid://dle68y5qodmj6::::res://Assets/Black_border.png<>uid://r21sjw5aihmd::::res://Src/Views/TacticalView/TacticalView.tscn[m
+[31m-::res://Src/Views/PlayerView/::1731976259[m
+[31m-PlayerView.gd::GDScript::-1::1731544661::0::1::::<>Node2D<>::[m
+[31m-PlayerView.tscn::PackedScene::6075112888898932813::1731976259::0::1::::<><>::res://Src/Views/PlayerView/PlayerView.gd<>uid://c5qjbywtccp1w::::res://Src/Ships/Body/body.tscn[m
+[31m-::res://Src/Views/TacticalView/::1732399385[m
+[31m-TacticalView.gd::GDScript::-1::1731544661::0::1::::<>Node2D<>::[m
+[31m-TacticalView.tscn::PackedScene::1250559835367614775::1732399385::0::1::::<><>::res://Src/Views/TacticalView/TacticalView.gd<>uid://c5qjbywtccp1w::::res://Src/Ships/Body/body.tscn[m
+[31m-::res://Src/World/::1731544661[m
+[31m-world.gd::GDScript::-1::1731544661::0::1::::<>Node2D<>::[m
+[31m-world.tscn::PackedScene::5691817849068709887::1730570624::0::1::::<><>::res://Src/World/world.gd<>uid://cpedwdlx5g7fp::::res://Src/Ships/cannon_ball.tscn<>uid://s0gff1e3m8qt::::res://Src/Ships/ship.tscn<>uid://cvwp1cu3uauij::::res://icon.svg[m
+[32m+[m[32m::res://::1738555953[m
+[32m+[m[32mhi.txt::TextFile::-1::1733095245::0::1::::<><>::[m
+[32m+[m[32micon.svg::CompressedTexture2D::6293180717148952105::1733095245::1733177360::1::::<><>::[m
+[32m+[m[32m::res://Assets/::1738426542[m
+[32m+[m[32mBlack_border.png::CompressedTexture2D::7941539307738863993::1733095244::1733177360::1::::<><>::[m
+[32m+[m[32mcannonfire2.2.png::CompressedTexture2D::382429462760817233::1733095245::1733177360::1::::<><>::[m
+[32m+[m[32mdamaged_ship-001.png::CompressedTexture2D::8457958342731607310::1733095245::1733177360::1::::<><>::[m
+[32m+[m[32msails-0001.png::CompressedTexture2D::7671253424357774043::1733095245::1733177360::1::::<><>::[m
+[32m+[m[32mship-0001-2.png::CompressedTexture2D::7193593342567297946::1733095245::1733177360::1::::<><>::[m
+[32m+[m[32mShip-0001.png::CompressedTexture2D::1741010446435607543::1733095245::1733177360::1::::<><>::[m
+[32m+[m[32mShips tiles-2.png.png::CompressedTexture2D::534305735414244029::1733095245::1733177360::1::::<><>::[m
+[32m+[m[32m::res://Assets/Crew/::1733177360[m
+[32m+[m[32mwalking_pink.png::CompressedTexture2D::5831813518552460306::1733095244::1733177360::1::::<><>::[m
+[32m+[m[32m::res://Assets/Foozle_2DT0013_Scallywag_Ships/::1733177360[m
+[32m+[m[32mBoat Fx Animations.png::CompressedTexture2D::3501707714344551883::1733095244::1733177360::1::::<><>::[m
+[32m+[m[32mReadme.txt::TextFile::-1::1733095244::0::1::::<><>::[m
+[32m+[m[32mShips Mockup.png::CompressedTexture2D::2755657713013916587::1733095245::1733177360::1::::<><>::[m
+[32m+[m[32mShips tiles.png::CompressedTexture2D::9133238105502717617::1733095245::1733177360::1::::<><>::[m
+[32m+[m[32m::res://Assets/SymbolMaker/::1738556221[m
+[32m+[m[32mhex2-8-1-sheet.png::CompressedTexture2D::7277543407466174799::1738426542::1738426564::1::::<><>::[m
+[32m+[m[32mhex3-gutter.png::CompressedTexture2D::3671885526719262632::1738556146::1738556221::1::::<><>::[m
+[32m+[m[32mhex3-hexplate.png::CompressedTexture2D::8786279225420830545::1738556142::1738556221::1::::<><>::[m
+[32m+[m[32mhex3-holders1.png::CompressedTexture2D::3325740676195396644::1738556003::1738556065::1::::<><>::[m
+[32m+[m[32mhex3-holders2.png::CompressedTexture2D::2945945622486887073::1738556008::1738556065::1::::<><>::[m
+[32m+[m[32mhex3-inner.png::CompressedTexture2D::3737088190579799245::1738556138::1738556221::1::::<><>::[m
+[32m+[m[32mhex3-keystones1.png::CompressedTexture2D::5970775963831294017::1738556012::1738556065::1::::<><>::[m
+[32m+[m[32m::res://Saves/::1733095245[m
+[32m+[m[32m::res://Saves/ShipPresets/::1733095245[m
+[32m+[m[32mship1.txt::TextFile::-1::1733095245::0::1::::<><>::[m
+[32m+[m[32m::res://Src/::1734794671[m
+[32m+[m[32m::res://Src/Crew/::1733095245[m
+[32m+[m[32mCrew.gd::GDScript::-1::1733095245::0::1::::<>Node2D<>::[m
+[32m+[m[32mCrew.tscn::PackedScene::5063597243943373082::1733095245::0::1::::<><>::res://Src/Crew/Crew.gd<>uid://cpc8d72ky77as::::res://Assets/Crew/walking_pink.png<>res://Src/Shaders/BasicSelected.gdshader[m
+[32m+[m[32m::res://Src/Encounters/::1733095245[m
+[32m+[m[32mdialogue.gd::GDScript::-1::1733095245::0::1::::<>Node2D<>::[m
+[32m+[m[32mdialogue.tscn::PackedScene::2336334894636227481::1733095245::0::1::::<><>::res://Src/Encounters/dialogue.gd[m
+[32m+[m[32mdialoguebox.gd::GDScript::-1::1733095245::0::1::::<>Panel<>::[m
+[32m+[m[32mencounterint.gd::GDScript::-1::1733095245::0::1::::<>Node2D<>::[m
+[32m+[m[32mencounterint.tscn::PackedScene::3853068385345758133::1733095245::0::1::::<><>::res://Src/Encounters/encounterint.gd<>uid://8j0dhdgrn82h::::res://Src/Encounters/dialogue.tscn[m
+[32m+[m[32m::res://Src/Shaders/::1738556378[m
+[32m+[m[32mBasicSelected.gdshader::Shader::-1::1738556378::0::1::::<><>::[m
+[32m+[m[32m::res://Src/Ships/::1733095245[m
+[32m+[m[32mcannon_ball.tscn::PackedScene::5834153147065410921::1733095245::0::1::::<><>::res://Ships/cannon_ball.gd<>uid://cvwp1cu3uauij::::res://icon.svg[m
+[32m+[m[32mship.tscn::PackedScene::1315382163263535575::1733095245::0::1::::<><>::uid://d3ehdkm6xuml2::::res://Assets/Foozle_2DT0013_Scallywag_Ships/Ships tiles.png<>res://Ships/ship.gd<>uid://cpedwdlx5g7fp::::res://Ships/cannon_ball.tscn<>uid://y2mgm75hf3mx::::res://Assets/Ship-0001.png[m
+[32m+[m[32mShipManager.gd::GDScrip
