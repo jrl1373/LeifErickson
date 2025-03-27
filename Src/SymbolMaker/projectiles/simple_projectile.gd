@@ -1,4 +1,4 @@
-extends Node2D
+extends Projectile
 
 # Called every frame. 'deltaextends Node2D
 @export var length: int
