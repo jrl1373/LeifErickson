@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://nmv8fokb54c"]
+[gd_scene load_steps=8 format=3 uid="uid://nmv8fokb54c"]
 
 [ext_resource type="PackedScene" uid="uid://di3tumjwtrop2" path="res://Src/SymbolMaker/DrawingNode.tscn" id="1_svmht"]
 [ext_resource type="Script" path="res://Src/SymbolMaker/battle_prototype.gd" id="1_xdkh6"]
 [ext_resource type="PackedScene" uid="uid://btn143t5mjhjx" path="res://Src/SymbolMaker/projectiles/SimpleProjectile.tscn" id="2_cl7i4"]
 [ext_resource type="PackedScene" uid="uid://bl3dduyi7q2nj" path="res://Src/Enemies/Waddler.tscn" id="3_k14e8"]
+[ext_resource type="PackedScene" uid="uid://bnxqbywjyfwq1" path="res://Src/SymbolMaker/BattleScene1.tscn" id="4_rpeow"]
 [ext_resource type="PackedScene" uid="uid://cq7ltify3xahm" path="res://Src/Character/MC.tscn" id="5_5eiyn"]
 [ext_resource type="AudioStream" uid="uid://boqncyb2bqeq6" path="res://Assets/Music/1037651_Everhood---Feisty-Flowers.mp3" id="6_xo5au"]
 
@@ -11,6 +12,7 @@
 script = ExtResource("1_xdkh6")
 simple_projectile = ExtResource("2_cl7i4")
 enemy = ExtResource("3_k14e8")
+scene = ExtResource("4_rpeow")
 
 [node name="DrawingNode" parent="." instance=ExtResource("1_svmht")]
 
@@ -19,7 +21,6 @@ process_callback = 0
 
 [node name="ProjectileTimer" type="Timer" parent="."]
 wait_time = 0.5
-autostart = true
 
 [node name="KILLZONE" type="Area2D" parent="." groups=["KILLBOX"]]
 
@@ -29,12 +30,12 @@ polygon = PackedVector2Array(-1200, -1200, -1200, 1200, 1200, 1200, 1200, -1200)
 
 [node name="WaddlerTimer" type="Timer" parent="."]
 wait_time = 2.0
-autostart = true
 
 [node name="Mc" parent="." instance=ExtResource("5_5eiyn")]
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_xo5au")
+autoplay = true
 
 [connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
 [connection signal="timeout" from="ProjectileTimer" to="." method="_on_projectile_timer_timeout"]

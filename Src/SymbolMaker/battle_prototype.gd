@@ -1,12 +1,14 @@
 extends Node2D
 @export var simple_projectile: PackedScene
 @export var enemy: PackedScene
+@export var scene: PackedScene
 var SPAWN_DISTANCE = 1000
 var collisions = []
 var total_entered = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	self.add_child(scene.instantiate())
 	pass # Replace with function body.
 
 

@@ -1,7 +1,6 @@
 extends Projectile
 
 # Called every frame. 'deltaextends Node2D
-@export var length: int
 @export var velocity: float
 @export var heading: float
 var RADIUS = 20
@@ -22,8 +21,12 @@ func _process(delta: float) -> void:
 
 		
 	pass
-
-
+	
+func initialize(velocity, heading):
+	self.velocity = velocity
+	self.heading = heading
+	$AnimatedSprite2D.play()
+	
 func init():
 	$AnimatedSprite2D.play()
 	pass
