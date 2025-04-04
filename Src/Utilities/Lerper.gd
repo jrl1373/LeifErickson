@@ -18,7 +18,6 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	print("E")
 	position = lerp(start,end,current)
 	current = min(current + delta/duration,1)
 	if current >=1:

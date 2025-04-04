@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://clltfro1lbjwf"
+path="res://.godot/imported/Church.wav-8f072bbd21643a18facb469aa888281d.sample"
+
+[deps]
+
+source_file="res://SoundBanks/wwiseStarterProject/Originals/Plugins/iZotope Hybrid Reverb/Church.wav"
+dest_files=["res://.godot/imported/Church.wav-8f072bbd21643a18facb469aa888281d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -15,6 +15,10 @@ run/main_scene="res://Src/SymbolMaker/BattlePrototype.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+WwiseRuntimeManager="*res://addons/Wwise/runtime/wwise_runtime_manager.gd"
+
 [display]
 
 window/size/viewport_width=1920
@@ -76,3 +80,7 @@ right={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+
+[wwise]
+
+common_user_settings/root_output_path="res://SoundBanks"

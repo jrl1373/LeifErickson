@@ -8,7 +8,9 @@ var total_entered = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	self.add_child(scene.instantiate())
+	var new_scene = scene.instantiate()
+	self.add_child(new_scene)
+	new_scene.projectile.connect(_spawn_projectile)
 	pass # Replace with function body.
 
 
@@ -38,9 +40,18 @@ func _on_projectile_timer_timeout() -> void:
 
 	
 	
-	pass # Replace with function body.
+	pass # Replace with function body.	
+func _spawn_projectile(origin,velocity,heading):
+		var new_projectile = simple_projectile.instantiate()
+		new_projectile.position = origin
+		new_projectile.heading = heading
+		new_projectile.velocity = velocity
+		new_projectile.captured.connect(captured)
+		new_projectile.entered.connect(entered)
+		self.add_child(new_projectile)
 	
-	
+
+
 func captured(point):
 	print("captured!")
 	pass

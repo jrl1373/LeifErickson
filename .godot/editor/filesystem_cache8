@@ -1,10 +1,110 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1743210560
+::res://::1743729239
+beatmaptest.txt::TextFile::-1::1743213214::0::1::::<><>::
 circles.gd::GDScript::-1::1740888003::0::1::::<>Node2D<>::
 export_presets.cfg::TextFile::-1::1742090282::0::1::::<><>::
 hi.txt::TextFile::-1::1733098845::0::1::::<><>::
 icon.svg::CompressedTexture2D::6293180717148952105::1733098845::1743210550::1::::<><>::
-testing.tscn::PackedScene::2180444074286536888::1743210560::0::1::::<><>::uid://di3tumjwtrop2::::res://Src/SymbolMaker/DrawingNode.tscn<>res://circles.gd
+testing.tscn::PackedScene::2180444074286536888::1743468286::0::1::::<><>::uid://di3tumjwtrop2::::res://Src/SymbolMaker/DrawingNode.tscn<>res://circles.gd
+::res://addons/::1743469564
+::res://addons/Wwise/::1743469576
+::res://addons/Wwise/editor/::1743469564
+::res://addons/Wwise/editor/images/::1743469611
+wwise_audio_speaker.svg::CompressedTexture2D::3884254299000847061::1743469564::1743469611::1::::<><>::
+::res://addons/Wwise/editor/theme/::1743469565
+::res://addons/Wwise/editor/theme/dark/::1743469564
+::res://addons/Wwise/editor/theme/dark/images/::1743469611
+ObjectIcons_AcousticTexture_nor.svg::CompressedTexture2D::4951835435864741306::1743469564::1743469611::1::::<><>::
+ObjectIcons_AuxBus_nor.svg::CompressedTexture2D::903784310324268159::1743469564::1743469611::1::::<><>::
+ObjectIcons_Bus_nor.svg::CompressedTexture2D::2021341935627144970::1743469564::1743469611::1::::<><>::
+ObjectIcons_Event_nor.svg::CompressedTexture2D::4697202425021466848::1743469564::1743469611::1::::<><>::
+ObjectIcons_Folder_nor.svg::CompressedTexture2D::5522883119487760757::1743469564::1743469611::1::::<><>::
+ObjectIcons_GameParameter_nor.svg::CompressedTexture2D::4603631238276123227::1743469564::1743469611::1::::<><>::
+ObjectIcons_PhysicalFolder_nor.svg::CompressedTexture2D::3614222802735020370::1743469564::1743469611::1::::<><>::
+ObjectIcons_Project_nor.svg::CompressedTexture2D::2980266243986840536::1743469564::1743469611::1::::<><>::
+ObjectIcons_Soundbank_nor.svg::CompressedTexture2D::1065435340437813023::1743469564::1743469611::1::::<><>::
+ObjectIcons_StateGroup_nor.svg::CompressedTexture2D::6162591258630856737::1743469564::1743469611::1::::<><>::
+ObjectIcons_State_nor.svg::CompressedTexture2D::8509799300675741335::1743469564::1743469611::1::::<><>::
+ObjectIcons_SwitchGroup_nor.svg::CompressedTexture2D::6996432913633007881::1743469565::1743469611::1::::<><>::
+ObjectIcons_Switch_nor.svg::CompressedTexture2D::2497894953661883418::1743469565::1743469611::1::::<><>::
+ObjectIcons_Trigger_nor.svg::CompressedTexture2D::1023923776406982502::1743469565::1743469611::1::::<><>::
+ObjectIcons_Workunit_nor.svg::CompressedTexture2D::3446432217242889363::1743469565::1743469611::1::::<><>::
+::res://addons/Wwise/editor/theme/light/::1743469565
+::res://addons/Wwise/editor/theme/light/images/::1743469611
+ObjectIcons_AcousticTexture_nor.svg::CompressedTexture2D::3878863745427440078::1743469565::1743469611::1::::<><>::
+ObjectIcons_AuxBus_nor.svg::CompressedTexture2D::1346716842787636905::1743469565::1743469611::1::::<><>::
+ObjectIcons_Bus_nor.svg::CompressedTexture2D::414014004172304701::1743469565::1743469611::1::::<><>::
+ObjectIcons_Event_nor.svg::CompressedTexture2D::5180551388274103919::1743469565::1743469611::1::::<><>::
+ObjectIcons_Folder_nor.svg::CompressedTexture2D::2650845025171217285::1743469565::1743469611::1::::<><>::
+ObjectIcons_GameParameter_nor.svg::CompressedTexture2D::8199479958239509341::1743469565::1743469611::1::::<><>::
+ObjectIcons_PhysicalFolder_nor.svg::CompressedTexture2D::1133776660763340640::1743469565::1743469611::1::::<><>::
+ObjectIcons_Project_nor.svg::CompressedTexture2D::5687141339393015594::1743469565::1743469611::1::::<><>::
+ObjectIcons_Soundbank_nor.svg::CompressedTexture2D::1320090122756922711::1743469565::1743469611::1::::<><>::
+ObjectIcons_StateGroup_nor.svg::CompressedTexture2D::9120547866986942281::1743469565::1743469611::1::::<><>::
+ObjectIcons_State_nor.svg::CompressedTexture2D::6233755688767923594::1743469565::1743469611::1::::<><>::
+ObjectIcons_SwitchGroup_nor.svg::CompressedTexture2D::6399779451948823034::1743469565::1743469611::1::::<><>::
+ObjectIcons_Switch_nor.svg::CompressedTexture2D::1509384340817050706::1743469565::1743469611::1::::<><>::
+ObjectIcons_Trigger_nor.svg::CompressedTexture2D::250114549842437918::1743469565::1743469611::1::::<><>::
+ObjectIcons_Workunit_nor.svg::CompressedTexture2D::1856787753473929618::1743469565::1743469611::1::::<><>::
+::res://addons/Wwise/native/::1743469565
+wwise.gdextension::GDExtension::-1::1743469565::0::1::::<><>::
+::res://addons/Wwise/native/lib/::1743469574
+::res://addons/Wwise/native/lib/android/::1743469567
+::res://addons/Wwise/native/lib/android/debug/::1743469566
+::res://addons/Wwise/native/lib/android/debug/arm64-v8a/::1743469566
+::res://addons/Wwise/native/lib/android/debug/arm64-v8a/DSP/::1743469566
+::res://addons/Wwise/native/lib/android/debug/armeabi-v7a/::1743469566
+::res://addons/Wwise/native/lib/android/debug/armeabi-v7a/DSP/::1743469567
+::res://addons/Wwise/native/lib/android/release/::1743469568
+::res://addons/Wwise/native/lib/android/release/arm64-v8a/::1743469567
+::res://addons/Wwise/native/lib/android/release/arm64-v8a/DSP/::1743469568
+::res://addons/Wwise/native/lib/android/release/armeabi-v7a/::1743469568
+::res://addons/Wwise/native/lib/android/release/armeabi-v7a/DSP/::1743469568
+::res://addons/Wwise/native/lib/ios/::1743469568
+::res://addons/Wwise/native/lib/ios/arm64/::1743469570
+::res://addons/Wwise/native/lib/ios/arm64/template_debug/::1743469568
+::res://addons/Wwise/native/lib/ios/arm64/template_debug/profile/::1743469570
+::res://addons/Wwise/native/lib/ios/arm64/template_debug/profile/DSP/::1743469570
+::res://addons/Wwise/native/lib/ios/arm64/template_debug/profile/libwwise.ios.template_debug.profile.framework/::1743469570
+::res://addons/Wwise/native/lib/ios/arm64/template_release/::1743469570
+::res://addons/Wwise/native/lib/ios/arm64/template_release/release/::1743469571
+::res://addons/Wwise/native/lib/ios/arm64/template_release/release/DSP/::1743469571
+::res://addons/Wwise/native/lib/ios/arm64/template_release/release/libwwise.ios.template_release.release.framework/::1743469571
+::res://addons/Wwise/native/lib/linux/::1743469572
+::res://addons/Wwise/native/lib/linux/editor/::1743469571
+::res://addons/Wwise/native/lib/linux/editor/profile/::1743469571
+::res://addons/Wwise/native/lib/linux/editor/profile/DSP/::1743469572
+::res://addons/Wwise/native/lib/linux/template_debug/::1743469572
+::res://addons/Wwise/native/lib/linux/template_debug/profile/::1743469572
+::res://addons/Wwise/native/lib/linux/template_debug/profile/DSP/::1743469572
+::res://addons/Wwise/native/lib/linux/template_release/::1743469572
+::res://addons/Wwise/native/lib/linux/template_release/release/::1743469572
+::res://addons/Wwise/native/lib/linux/template_release/release/DSP/::1743469573
+::res://addons/Wwise/native/lib/macos/::1743469574
+::res://addons/Wwise/native/lib/macos/editor/::1743469573
+::res://addons/Wwise/native/lib/macos/editor/profile/::1743469573
+::res://addons/Wwise/native/lib/macos/editor/profile/DSP/::1743469573
+::res://addons/Wwise/native/lib/macos/editor/profile/libwwise.macos.editor.profile.framework/::1743469573
+::res://addons/Wwise/native/lib/macos/template_debug/::1743469573
+::res://addons/Wwise/native/lib/macos/template_debug/profile/::1743469574
+::res://addons/Wwise/native/lib/macos/template_debug/profile/DSP/::1743469574
+::res://addons/Wwise/native/lib/macos/template_debug/profile/libwwise.macos.template_debug.profile.framework/::1743469574
+::res://addons/Wwise/native/lib/macos/template_release/::1743469574
+::res://addons/Wwise/native/lib/macos/template_release/release/::1743469574
+::res://addons/Wwise/native/lib/macos/template_release/release/DSP/::1743469574
+::res://addons/Wwise/native/lib/macos/template_release/release/libwwise.macos.template_release.release.framework/::1743469574
+::res://addons/Wwise/native/lib/win64/::1743469575
+::res://addons/Wwise/native/lib/win64/editor/::1743469574
+::res://addons/Wwise/native/lib/win64/editor/profile/::1743729235
+::res://addons/Wwise/native/lib/win64/editor/profile/DSP/::1743469575
+::res://addons/Wwise/native/lib/win64/template_debug/::1743469575
+::res://addons/Wwise/native/lib/win64/template_debug/profile/::1743469575
+::res://addons/Wwise/native/lib/win64/template_debug/profile/DSP/::1743469575
+::res://addons/Wwise/native/lib/win64/template_release/::1743469575
+::res://addons/Wwise/native/lib/win64/template_release/release/::1743469575
+::res://addons/Wwise/native/lib/win64/template_release/release/DSP/::1743469576
+::res://addons/Wwise/runtime/::1743469576
+wwise_runtime_manager.gd::GDScript::-1::1743469576::0::1::::<>Node<>::
 ::res://Assets/::1743210550
 Black_border.png::CompressedTexture2D::7941539307738863993::1733098844::1743210550::1::::<><>::
 cannonfire2.2.png::CompressedTexture2D::382429462760817233::1733098845::1743210550::1::::<><>::
@@ -41,14 +141,12 @@ firststandingright.png::CompressedTexture2D::6718624480054964020::1742090281::17
 firststandingup.png::CompressedTexture2D::6784149455236633194::1742090281::1743210550::1::::<><>::
 ::res://Assets/Music/::1743210550
 1037651_Everhood---Feisty-Flowers.mp3::AudioStreamMP3::3402888694518219391::1742090203::1743210550::1::::<><>::
-::res://Assets/Projectiles/::1743210550
+::res://Assets/Projectiles/::1743211080
 arrowbody.png::CompressedTexture2D::2785683248717574753::1742089814::1743210550::1::::<><>::
 arrowtip.png::CompressedTexture2D::263256146163235463::1742089806::1743210550::1::::<><>::
 goo.png::CompressedTexture2D::1215629857072778992::1742089791::1743210550::1::::<><>::
 orb.png::CompressedTexture2D::5826712658206973512::1742089778::1743210550::1::::<><>::
 orbanimation.png::CompressedTexture2D::8780003089018491738::1742089841::1743210550::1::::<><>::
-ProjectilePattern.tscn::PackedScene::6432566549567297118::1743210778::0::1::::<><>::
-projectile_pattern.gd::GDScript::-1::1743210783::0::1::::<>Node2D<>::
 spill1.png::CompressedTexture2D::5000241144063037433::1742090281::1743210550::1::::<><>::
 spinwin.png::CompressedTexture2D::4039461711522347311::1742089782::1743210550::1::::<><>::
 trianglegreen.png::CompressedTexture2D::1365090493459419410::1742089799::1743210550::1::::<><>::
@@ -64,12 +162,59 @@ hex3-keystones1.png::CompressedTexture2D::5970775963831294017::1738643261::17432
 ::res://Saves/::1733098845
 ::res://Saves/ShipPresets/::1733098845
 ship1.txt::TextFile::-1::1733098845::0::1::::<><>::
+::res://SoundBanks/::1743729373
+::res://SoundBanks/wwiseStarterProject/::1743729374
+::res://SoundBanks/wwiseStarterProject/Actor-Mixer Hierarchy/::1743729373
+::res://SoundBanks/wwiseStarterProject/Attenuations/::1743729373
+::res://SoundBanks/wwiseStarterProject/Audio Devices/::1743729373
+::res://SoundBanks/wwiseStarterProject/Control Surface Sessions/::1743729373
+::res://SoundBanks/wwiseStarterProject/Conversion Settings/::1743729373
+::res://SoundBanks/wwiseStarterProject/Dynamic Dialogue/::1743729373
+::res://SoundBanks/wwiseStarterProject/Effects/::1743729373
+::res://SoundBanks/wwiseStarterProject/Events/::1743729373
+::res://SoundBanks/wwiseStarterProject/Game Parameters/::1743729373
+::res://SoundBanks/wwiseStarterProject/GeneratedSoundBanks/::1743729374
+::res://SoundBanks/wwiseStarterProject/GeneratedSoundBanks/Windows/::1743729374
+::res://SoundBanks/wwiseStarterProject/Interactive Music Hierarchy/::1743729373
+::res://SoundBanks/wwiseStarterProject/Master-Mixer Hierarchy/::1743729373
+::res://SoundBanks/wwiseStarterProject/Metadata/::1743729373
+::res://SoundBanks/wwiseStarterProject/Mixing Sessions/::1743729373
+::res://SoundBanks/wwiseStarterProject/Modulators/::1743729373
+::res://SoundBanks/wwiseStarterProject/Originals/::1743729373
+::res://SoundBanks/wwiseStarterProject/Originals/Plugins/::1743729373
+::res://SoundBanks/wwiseStarterProject/Originals/Plugins/iZotope Hybrid Reverb/::1743729373
+Auditorium.wav::AudioStreamWAV::6476424066447022243::1743469842::1743729455::1::::<><>::
+Car Interior.wav::AudioStreamWAV::3427002194847428551::1743469842::1743729455::1::::<><>::
+Cavern.wav::AudioStreamWAV::8905561531129241093::1743469842::1743729455::1::::<><>::
+Church.wav::AudioStreamWAV::5568790270251588621::1743469842::1743729455::1::::<><>::
+City Center.wav::AudioStreamWAV::8656150201747179459::1743469842::1743729455::1::::<><>::
+City Streets.wav::AudioStreamWAV::7731630437797216861::1743469842::1743729455::1::::<><>::
+Forest.wav::AudioStreamWAV::3614353929442048449::1743469842::1743729455::1::::<><>::
+Medium Metal Room.wav::AudioStreamWAV::6884376647291004650::1743469842::1743729455::1::::<><>::
+Medium Wood Hall.wav::AudioStreamWAV::7257836787189414324::1743469842::1743729455::1::::<><>::
+Medium Wood Room.wav::AudioStreamWAV::3548889288797711345::1743469842::1743729455::1::::<><>::
+Metallic Hall.wav::AudioStreamWAV::7077886267998180434::1743469842::1743729455::1::::<><>::
+Rock Wall.wav::AudioStreamWAV::8621268941165152180::1743469842::1743729455::1::::<><>::
+Small Metal Room.wav::AudioStreamWAV::3815204011966901001::1743469842::1743729455::1::::<><>::
+Small Wood Room.wav::AudioStreamWAV::4001324164798663220::1743469842::1743729455::1::::<><>::
+::res://SoundBanks/wwiseStarterProject/Originals/Plugins/iZotope Trash Box Modeler/::1743729373
+::res://SoundBanks/wwiseStarterProject/Originals/SFX/::1743729373
+::res://SoundBanks/wwiseStarterProject/Originals/Voices/::1743729373
+::res://SoundBanks/wwiseStarterProject/Originals/Voices/English(US)/::1743729373
+::res://SoundBanks/wwiseStarterProject/Presets/::1743729373
+::res://SoundBanks/wwiseStarterProject/Queries/::1743729373
+::res://SoundBanks/wwiseStarterProject/SoundBanks/::1743729373
+::res://SoundBanks/wwiseStarterProject/Soundcaster Sessions/::1743729373
+::res://SoundBanks/wwiseStarterProject/States/::1743729373
+::res://SoundBanks/wwiseStarterProject/Switches/::1743729373
+::res://SoundBanks/wwiseStarterProject/Triggers/::1743729373
+::res://SoundBanks/wwiseStarterProject/Virtual Acoustics/::1743729373
 ::res://Src/::1742090282
 lagtest.gd::GDScript::-1::1742090282::0::1::::<>Node2D<>::
 lagtest.tscn::PackedScene::7106323140768721647::1742090282::0::1::::<><>::res://Src/lagtest.gd
-::res://Src/Character/::1743210560
+::res://Src/Character/::1743468287
 mc.gd::GDScript::-1::1742092515::0::1::::<>Node2D<>::
-MC.tscn::PackedScene::5962625199768852274::1743210560::0::1::::<><>::res://Src/Character/mc.gd<>uid://caot2njv6kmqe::::res://Assets/MC/firststandingdown.png<>uid://hmg4wraqfypa::::res://Assets/MC/firststandingleft.png<>uid://c2ys07x4xys0k::::res://Assets/MC/firststandingright.png<>uid://c3wj7kuunrnr3::::res://Assets/MC/firststandingup.png<>uid://dvcvsqd1762b0::::res://Assets/MC/firstrunningdown.png<>uid://cukmnhmxfbk67::::res://Assets/MC/firstrunningleft.png<>uid://dt2tsgay70psx::::res://Assets/MC/firstrunningright.png<>uid://bsmnrwmtast5e::::res://Assets/MC/firstrunningup.png
+MC.tscn::PackedScene::5962625199768852274::1743468287::0::1::::<><>::res://Src/Character/mc.gd<>uid://caot2njv6kmqe::::res://Assets/MC/firststandingdown.png<>uid://hmg4wraqfypa::::res://Assets/MC/firststandingleft.png<>uid://c2ys07x4xys0k::::res://Assets/MC/firststandingright.png<>uid://c3wj7kuunrnr3::::res://Assets/MC/firststandingup.png<>uid://dvcvsqd1762b0::::res://Assets/MC/firstrunningdown.png<>uid://cukmnhmxfbk67::::res://Assets/MC/firstrunningleft.png<>uid://dt2tsgay70psx::::res://Assets/MC/firstrunningright.png<>uid://bsmnrwmtast5e::::res://Assets/MC/firstrunningup.png
 ::res://Src/Crew/::1733098845
 Crew.gd::GDScript::-1::1733098845::0::1::::<>Node2D<>::
 Crew.tscn::PackedScene::5063597243943373082::1733098845::0::1::::<><>::res://Src/Crew/Crew.gd<>uid://cpc8d72ky77as::::res://Assets/Crew/walking_pink.png<>res://Src/Shaders/BasicSelected.gdshader
@@ -79,19 +224,19 @@ dialogue.tscn::PackedScene::2336334894636227481::1733098845::0::1::::<><>::res:/
 dialoguebox.gd::GDScript::-1::1733098845::0::1::::<>Panel<>::
 encounterint.gd::GDScript::-1::1733098845::0::1::::<>Node2D<>::
 encounterint.tscn::PackedScene::3853068385345758133::1733098845::0::1::::<><>::res://Src/Encounters/encounterint.gd<>uid://8j0dhdgrn82h::::res://Src/Encounters/dialogue.tscn
-::res://Src/Enemies/::1742090282
-waddler.gd::GDScript::-1::1742090282::0::1::::<>Moveable<>::
+::res://Src/Enemies/::1743214590
+waddler.gd::GDScript::-1::1743214590::0::1::::<>Moveable<>::
 Waddler.tscn::PackedScene::3216489137134360623::1742090282::0::1::::<><>::res://Src/Enemies/waddler.gd<>uid://4xhlc0koixkl::::res://Assets/Enemies/Waddler/walkingdown.png<>uid://dwt14b1lkdj8x::::res://Assets/Enemies/Waddler/walkingleft.png<>uid://cr73odc1lgrsg::::res://Assets/Enemies/Waddler/walkingright.png<>uid://c7i3kmodvvcuh::::res://Assets/Enemies/Waddler/walkingup.png
-::res://Src/Shaders/::1743210560
-BasicSelected.gdshader::Shader::-1::1743210778::0::1::::<><>::
+::res://Src/Shaders/::1743469607
+BasicSelected.gdshader::Shader::-1::1743469607::0::1::::<><>::
 ::res://Src/Ships/::1733098845
 cannon_ball.tscn::PackedScene::5834153147065410921::1733098845::0::1::::<><>::res://Ships/cannon_ball.gd<>uid://cvwp1cu3uauij::::res://icon.svg
 ship.tscn::PackedScene::1315382163263535575::1733098845::0::1::::<><>::uid://d3ehdkm6xuml2::::res://Assets/Foozle_2DT0013_Scallywag_Ships/Ships tiles.png<>res://Ships/ship.gd<>uid://cpedwdlx5g7fp::::res://Ships/cannon_ball.tscn<>uid://y2mgm75hf3mx::::res://Assets/Ship-0001.png
 ShipManager.gd::GDScript::-1::1733098845::0::1::::<>Node2D<>::
-::res://Src/Ships/Body/::1743210559
-BasicBody.tscn::PackedScene::5849919185488021718::1743210559::0::1::::<><>::
-body.gd::GDScript::-1::1743210559::0::1::::<>Node2D<>::
-body.tscn::PackedScene::6912086254733076310::1743210559::0::1::::<><>::res://Src/Ships/Body/body.gd<>uid://daqvowv8eyr1c::::res://Assets/ship-0001-2.png<>uid://d1dg17vnqooob::::res://Src/SymbolMaker/projectiles/LineProjectile.tscn<>uid://dsrdlq65i4q0u::::res://Assets/damaged_ship-001.png<>uid://dhkaoned3mli6::::res://Assets/sails-0001.png<>uid://y2mgm75hf3mx::::res://Assets/Ship-0001.png<>uid://d3ehdkm6xuml2::::res://Assets/Foozle_2DT0013_Scallywag_Ships/Ships tiles.png<>uid://d1rrxt78r1ukw::::res://Src/Ships/Cannons/Cannon.tscn<>uid://cee3ybclsu5lm::::res://Src/Crew/Crew.tscn
+::res://Src/Ships/Body/::1743468286
+BasicBody.tscn::PackedScene::5849919185488021718::1743468286::0::1::::<><>::
+body.gd::GDScript::-1::1743468161::0::1::::<>Node2D<>::
+body.tscn::PackedScene::6912086254733076310::1743468285::0::1::::<><>::res://Src/Ships/Body/body.gd<>uid://daqvowv8eyr1c::::res://Assets/ship-0001-2.png<>uid://d1dg17vnqooob::::res://Src/SymbolMaker/projectiles/LineProjectile.tscn<>uid://dsrdlq65i4q0u::::res://Assets/damaged_ship-001.png<>uid://dhkaoned3mli6::::res://Assets/sails-0001.png<>uid://y2mgm75hf3mx::::res://Assets/Ship-0001.png<>uid://d3ehdkm6xuml2::::res://Assets/Foozle_2DT0013_Scallywag_Ships/Ships tiles.png<>uid://d1rrxt78r1ukw::::res://Src/Ships/Cannons/Cannon.tscn<>uid://cee3ybclsu5lm::::res://Src/Crew/Crew.tscn
 ::res://Src/Ships/Cannons/::1733098845
 Cannon.gd::GDScript::-1::1733098845::0::1::::<>Node2D<>::
 Cannon.tscn::PackedScene::9020340718524529978::1733098845::0::1::::<><>::res://Src/Ships/Cannons/Cannon.gd<>res://Src/Shaders/BasicSelected.gdshader<>uid://fpis7lgk8k86::::res://Assets/cannonfire2.2.png<>uid://d3ehdkm6xuml2::::res://Assets/Foozle_2DT0013_Scallywag_Ships/Ships tiles.png
@@ -104,49 +249,54 @@ ship.tscn::PackedScene::2464531092288209467::1733098845::0::1::::<><>::res://Src
 ::res://Src/Ships/Components/::1733098845
 ShipCell.gd::GDScript::-1::1733098845::0::1::::<>Node2D<>::
 ShipCell.tscn::PackedScene::8260881058339556044::1733098845::0::1::::<><>::res://Src/Ships/Components/ShipCell.gd
-::res://Src/SymbolMaker/::1743210560
-BattlePrototype.tscn::PackedScene::27604758032088572::1743210560::0::1::::<><>::uid://di3tumjwtrop2::::res://Src/SymbolMaker/DrawingNode.tscn<>res://Src/SymbolMaker/battle_prototype.gd<>uid://btn143t5mjhjx::::res://Src/SymbolMaker/projectiles/SimpleProjectile.tscn<>uid://bl3dduyi7q2nj::::res://Src/Enemies/Waddler.tscn<>uid://cq7ltify3xahm::::res://Src/Character/MC.tscn<>uid://boqncyb2bqeq6::::res://Assets/Music/1037651_Everhood---Feisty-Flowers.mp3
-battle_prototype.gd::GDScript::-1::1742091965::0::1::::<>Node2D<>::
-BrushParticle.tres::ParticleProcessMaterial::1661601749999131689::1743210559::0::1::::<><>::
-BrushParticle.tscn::PackedScene::7024248105583134030::1743210559::0::1::::<><>::res://Src/SymbolMaker/brush_particle.gd<>uid://xw5lq2c8vggn::::res://Src/SymbolMaker/BrushParticle.tres
+::res://Src/SymbolMaker/::1743468287
+BattlePrototype.tscn::PackedScene::27604758032088572::1743468286::0::1::::<><>::uid://di3tumjwtrop2::::res://Src/SymbolMaker/DrawingNode.tscn<>res://Src/SymbolMaker/battle_prototype.gd<>uid://btn143t5mjhjx::::res://Src/SymbolMaker/projectiles/SimpleProjectile.tscn<>uid://bl3dduyi7q2nj::::res://Src/Enemies/Waddler.tscn<>uid://bnxqbywjyfwq1::::res://Src/SymbolMaker/BattleScene1.tscn<>uid://cq7ltify3xahm::::res://Src/Character/MC.tscn<>uid://boqncyb2bqeq6::::res://Assets/Music/1037651_Everhood---Feisty-Flowers.mp3
+BattleScene1.tscn::PackedScene::3347330891996379226::1743468287::0::1::::<><>::uid://bl3dduyi7q2nj::::res://Src/Enemies/Waddler.tscn<>res://Src/SymbolMaker/battle_scene_1.gd
+battle_prototype.gd::GDScript::-1::1743460366::0::1::::<>Node2D<>::
+battle_scene_1.gd::GDScript::-1::1743462711::0::1::::<>Node2D<>::
+BrushParticle.tres::ParticleProcessMaterial::1661601749999131689::1743468161::0::1::::<><>::
+BrushParticle.tscn::PackedScene::7024248105583134030::1743468286::0::1::::<><>::res://Src/SymbolMaker/brush_particle.gd<>uid://xw5lq2c8vggn::::res://Src/SymbolMaker/BrushParticle.tres
 brush_particle.gd::GDScript::-1::1738431759::0::1::::<>Node2D<>::
-DirectionalEntity.tscn::PackedScene::5385048379878775382::1743210560::0::1::::<><>::res://Src/SymbolMaker/directional_entity.gd
-directional_entity.gd::GDScript::-1::1742090282::0::1::::Moveable<>Node2D<>::
-DrawingArea.tscn::PackedScene::6002467818201618995::1743210560::0::1::::<><>::
-DrawingNode.tscn::PackedScene::7779765361246992777::1743210559::0::1::::<><>::res://Src/SymbolMaker/drawing_node.gd
+DirectionalEntity.tscn::PackedScene::5385048379878775382::1743468287::0::1::::<><>::res://Src/SymbolMaker/directional_entity.gd
+directional_entity.gd::GDScript::-1::1743215036::0::1::::Moveable<>Node2D<>::
+DrawingArea.tscn::PackedScene::6002467818201618995::1743468286::0::1::::<><>::
+DrawingNode.tscn::PackedScene::7779765361246992777::1743468286::0::1::::<><>::res://Src/SymbolMaker/drawing_node.gd
 drawing_node.gd::GDScript::-1::1742356736::0::1::::<>Node2D<>::
 hex3-holders1.png::CompressedTexture2D::8730516292749088285::1738559635::1743210550::1::::<><>::
 hex3-holders2.png::CompressedTexture2D::3607275122985203668::1738559635::1743210550::1::::<><>::
 hex3-keystones1.png::CompressedTexture2D::4569013573548624694::1738559635::1743210550::1::::<><>::
-particleTest.tscn::PackedScene::6783366063085432824::1743210560::0::1::::<><>::
+particleTest.tscn::PackedScene::6783366063085432824::1743468286::0::1::::<><>::
 point.gd::GDScript::-1::1740888003::0::1::::<>Node2D<>::
-Point.tscn::PackedScene::8930225281398715344::1743210560::0::1::::<><>::res://Src/SymbolMaker/point.gd
-SymbolCreator.tscn::PackedScene::76573008909646549::1743210559::0::1::::<><>::res://Src/SymbolMaker/symbol_creator.gd<>uid://d0h4rgss4khrs::::res://Src/SymbolMaker/Point.tscn<>uid://dbxkcuu8uuoxj::::res://Assets/SymbolMaker/hex2-8-1-sheet.png<>uid://c7cultdck5l15::::res://Src/SymbolMaker/BrushParticle.tscn<>uid://d1dg17vnqooob::::res://Src/SymbolMaker/projectiles/LineProjectile.tscn<>uid://dpve34qykkr62::::res://Src/SymbolMaker/Background/SymbolMakerBackground.tscn
+Point.tscn::PackedScene::8930225281398715344::1743468286::0::1::::<><>::res://Src/SymbolMaker/point.gd
+SymbolCreator.tscn::PackedScene::76573008909646549::1743468286::0::1::::<><>::res://Src/SymbolMaker/symbol_creator.gd<>uid://d0h4rgss4khrs::::res://Src/SymbolMaker/Point.tscn<>uid://dbxkcuu8uuoxj::::res://Assets/SymbolMaker/hex2-8-1-sheet.png<>uid://c7cultdck5l15::::res://Src/SymbolMaker/BrushParticle.tscn<>uid://d1dg17vnqooob::::res://Src/SymbolMaker/projectiles/LineProjectile.tscn<>uid://dpve34qykkr62::::res://Src/SymbolMaker/Background/SymbolMakerBackground.tscn
 symbol_creator.gd::GDScript::-1::1740258197::0::1::::<>Node2D<>::
-::res://Src/SymbolMaker/Background/::1743210560
-CornerShader.tres::VisualShader::4316000946324249121::1743210559::0::1::::<><>::
-CornerStereoShader.tres::VisualShader::6409055964574168069::1743210559::0::1::::<><>::
-DistanceShader.gdshader::Shader::-1::1743210778::0::1::::<><>::
-SymbolBackground.gdshader::Shader::-1::1743210778::0::1::::<><>::
-SymbolBackgroundInnerCorner.gdshader::Shader::-1::1743210778::0::1::::<><>::
-SymbolMakerBackground.tscn::PackedScene::8255741057683699309::1743210559::0::1::::<><>::uid://btijkc01hemlx::::res://Assets/SymbolMaker/hex3-inner.png<>res://Src/SymbolMaker/Background/symbol_maker_background.gd<>uid://dxgey83nbom86::::res://Assets/SymbolMaker/hex3-hexplate.png<>uid://bskxohng0tgse::::res://Assets/SymbolMaker/hex3-gutter.png<>res://Src/SymbolMaker/Background/SymbolBackground.gdshader<>uid://crcj2p2dr25fx::::res://Assets/SymbolMaker/hex3-keystones1.png<>res://Src/SymbolMaker/Background/SymbolBackgroundInnerCorner.gdshader<>uid://dickj2pq2lkpe::::res://Assets/SymbolMaker/hex3-holders1-centered.png
+::res://Src/SymbolMaker/Background/::1743469607
+CornerShader.tres::VisualShader::4316000946324249121::1743468161::0::1::::<><>::
+CornerStereoShader.tres::VisualShader::6409055964574168069::1743468161::0::1::::<><>::
+DistanceShader.gdshader::Shader::-1::1743469607::0::1::::<><>::
+SymbolBackground.gdshader::Shader::-1::1743469607::0::1::::<><>::
+SymbolBackgroundInnerCorner.gdshader::Shader::-1::1743469607::0::1::::<><>::
+SymbolMakerBackground.tscn::PackedScene::8255741057683699309::1743468286::0::1::::<><>::uid://btijkc01hemlx::::res://Assets/SymbolMaker/hex3-inner.png<>res://Src/SymbolMaker/Background/symbol_maker_background.gd<>uid://dxgey83nbom86::::res://Assets/SymbolMaker/hex3-hexplate.png<>uid://bskxohng0tgse::::res://Assets/SymbolMaker/hex3-gutter.png<>res://Src/SymbolMaker/Background/SymbolBackground.gdshader<>uid://crcj2p2dr25fx::::res://Assets/SymbolMaker/hex3-keystones1.png<>res://Src/SymbolMaker/Background/SymbolBackgroundInnerCorner.gdshader<>uid://dickj2pq2lkpe::::res://Assets/SymbolMaker/hex3-holders1-centered.png
 symbol_maker_background.gd::GDScript::-1::1738643390::0::1::::<>Node2D<>::
-::res://Src/SymbolMaker/projectiles/::1743210560
+::res://Src/SymbolMaker/projectiles/::1743468287
 area_2d.gd::GDScript::-1::1742091965::0::1::::<>Area2D<>::
-LineProjectile.tscn::PackedScene::8990777565329156709::1743210559::0::1::::<><>::res://Src/SymbolMaker/projectiles/line_projectile.gd
+LineProjectile.tscn::PackedScene::8990777565329156709::1743468286::0::1::::<><>::res://Src/SymbolMaker/projectiles/line_projectile.gd
 line_projectile.gd::GDScript::-1::1740888003::0::1::::<>Node2D<>::
 Projectile.gd::GDScript::-1::1743208348::0::1::::Projectile<>Node2D<>::
-SimpleProjectile.tscn::PackedScene::3748477554838212333::1743210560::0::1::::<><>::res://Src/SymbolMaker/projectiles/simple_projectile.gd<>uid://cpardu0t52c8g::::res://Assets/Projectiles/orb.png<>uid://dxddmrr4purt7::::res://Assets/Projectiles/orbanimation.png<>res://Src/SymbolMaker/projectiles/area_2d.gd
-simple_projectile.gd::GDScript::-1::1743208348::0::1::::<>Projectile<>::
+ProjectilePattern.tscn::PackedScene::6432566549567297118::1743468287::0::1::::<><>::res://Src/SymbolMaker/projectiles/projectile_pattern.gd
+projectile_pattern.gd::GDScript::-1::1743211810::0::1::::<>Node2D<>::
+SimpleProjectile.tscn::PackedScene::3748477554838212333::1743468286::0::1::::<><>::res://Src/SymbolMaker/projectiles/simple_projectile.gd<>uid://cpardu0t52c8g::::res://Assets/Projectiles/orb.png<>uid://dxddmrr4purt7::::res://Assets/Projectiles/orbanimation.png<>res://Src/SymbolMaker/projectiles/area_2d.gd
+simple_projectile.gd::GDScript::-1::1743211543::0::1::::<>Projectile<>::
 Spill.tscn::PackedScene::1199447208567652000::1742090282::0::1::::<><>::uid://cdifigyenq8qf::::res://Assets/Projectiles/spill1.png
-::res://Src/SymbolMaker/Symbols/::1743210560
+::res://Src/SymbolMaker/Symbols/::1743468287
 circle.gd::GDScript::-1::1742090893::0::1::::<>Node2D<>::
-Circle.tscn::PackedScene::4168865015413479207::1743210560::0::1::::<><>::res://Src/SymbolMaker/Symbols/circle.gd
+Circle.tscn::PackedScene::4168865015413479207::1743468287::0::1::::<><>::res://Src/SymbolMaker/Symbols/circle.gd
 DrawingLine.tscn::PackedScene::3304921916203223565::1742090282::0::1::::<><>::res://Src/SymbolMaker/Symbols/drawing_line.gd
 drawing_line.gd::GDScript::-1::1742090282::0::1::::<>Node2D<>::
 wall.gd::GDScript::-1::1743208348::0::1::::<>Node2D<>::
-Wall.tscn::PackedScene::535223655272436676::1743210560::0::1::::<><>::res://Src/SymbolMaker/Symbols/wall.gd
-::res://Src/Utilities/::1733098845
+Wall.tscn::PackedScene::535223655272436676::1743468287::0::1::::<><>::res://Src/SymbolMaker/Symbols/wall.gd
+::res://Src/Utilities/::1743462401
+Lerper.gd::GDScript::-1::1743462401::0::1::::Lerper<>Node<>::
 ::res://Src/Utilities/ShipGenerator/::1733098845
 ShipGenerator.tscn::PackedScene::1042230319845964083::1733098845::0::1::::<><>::res://Src/Utilities/ShipGenerator/ship_generator.gd
 ShipLoader.gd::GDScript::-1::1733098845::0::1::::<>Node<>::
@@ -167,3 +317,6 @@ TacticalView.tscn::PackedScene::1250559835367614775::1733098845::0::1::::<><>::r
 ::res://Src/World/::1733098845
 world.gd::GDScript::-1::1733098845::0::1::::<>Node2D<>::
 world.tscn::PackedScene::5691817849068709887::1733098845::0::1::::<><>::res://Src/World/world.gd<>uid://cpedwdlx5g7fp::::res://Src/Ships/cannon_ball.tscn<>uid://s0gff1e3m8qt::::res://Src/Ships/ship.tscn<>uid://cvwp1cu3uauij::::res://icon.svg
+::res://Wwise/::1743469610
+::res://Wwise/resources/::1743469610
+WwiseProjectData.tres::WwiseProjectData::8787468592801341791::1743469610::0::1::::<><>::
