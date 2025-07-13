@@ -41,6 +41,8 @@ func beat_process():
 		10:
 			multi_projectile([0,1,2,3,0,1,2,3,0,1,2,3], fill_list(600,12), fill_list(0,12),1.0/64.0)
 			pass
+	if beat % 4 == 0:
+		multi_projectile([0,1,2,3,0,1,2,3,0,1,2,3], fill_list(600,12), fill_list(0,12),1.0/64.0)
 			
 
 

@@ -16,3 +16,5 @@ offset_right = 128.0
 offset_bottom = 27.0
 max_value = 1000.0
 value = 1000.0
+
+[node name="Line2D" type="Line2D" parent="."]
